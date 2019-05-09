@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="stylus">
-$menu-height = 100px
+$menu-height = 64px
 
 html
   font-family 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

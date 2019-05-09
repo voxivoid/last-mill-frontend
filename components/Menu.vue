@@ -1,11 +1,20 @@
 <template lang="pug">
 .menu
+  menu-toggle(:isActive="isOpen" @click.native="isOpen = !isOpen")
   nuxt-link(v-for="page in pages" :key="page.to" :to="page.to")
-    span {{ page.name }}
+    span.placeholder {{ page.name }}
+    span.base {{ page.name }}
+    span.hover {{ page.name }}
 </template>
 
 <script>
+import MenuToggle from "@/components/MenuToggle.vue";
+
 export default {
+  components: {
+    MenuToggle,
+  },
+
   data() {
     return {
       pages: [
@@ -30,6 +39,7 @@ export default {
           to: "/contacts",
         },
       ],
+      isOpen: false,
     };
   },
 
@@ -57,6 +67,7 @@ export default {
 <style lang="stylus" scoped>
 .menu
   display grid
+  align-content center
   grid-auto-flow column
   grid-auto-columns max-content
   grid-gap 32px
@@ -73,4 +84,22 @@ export default {
     display grid
     align-content center
     justify-content center
+    position relative
+    overflow hidden
+
+    &:hover
+      .base, .hover
+        transition all .3s
+        transform translateY(100%)
+
+.base
+  position absolute
+
+.hover
+  position absolute
+  top -100%
+  color red
+
+.placeholder
+  visibility hidden
 </style>

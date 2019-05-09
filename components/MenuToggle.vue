@@ -1,0 +1,57 @@
+<template lang="pug">
+.menu-toggle
+  .toggle(:class="{'is-active': isActive}")
+</template>
+
+<script>
+export default {
+  props: {
+    isActive: {
+      type: Boolean,
+      required: true,
+    },
+  },
+};
+</script>
+
+<style lang="stylus" scoped>
+$hamburger-color = black
+$cross-color = black
+
+.menu-toggle
+  position relative
+  display grid
+  align-content center
+  justify-content center
+  height 32px
+  cursor pointer
+
+.toggle
+  transition all 75ms ease,opacity 75ms ease .12s
+
+  &, &:before, &:after
+    width 40px
+    height 2px
+    background $hamburger-color
+    border-radius 4px
+
+  &:before, &:after
+    position absolute
+    content ''
+    opacity 1
+
+  &:before
+    top 0
+
+  &:after
+    bottom 0
+
+  &.is-active
+    transform rotate(45deg)
+
+    &, &:before, &:after
+      background $cross-color
+
+    &:after
+      transform rotate(-90deg)
+</style>
