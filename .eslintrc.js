@@ -40,5 +40,8 @@ module.exports = {
     "no-unused-vars": "warn",
     "brace-style": ["error", "stroustrup"],
     "no-underscore-dangle": "off",
+    "no-return-assign": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off"
   },
 };

@@ -2,22 +2,45 @@
 .layout
   cloak
   nuxt
-  menu-custom.menu
+  menu-desktop
 </template>
 
 <script>
+import { debounce } from "lodash";
+
 import Cloak from "@/components/Cloak.vue";
-import MenuCustom from "@/components/Menu.vue";
+import MenuDesktop from "@/components/MenuDesktop.vue";
+import MenuMobile from "@/components/MenuMobile.vue";
 
 export default {
   components: {
     Cloak,
-    MenuCustom,
+    MenuDesktop,
+    MenuMobile,
+  },
+  data() {
+    return {
+      $resizeListener: null,
+    };
+  },
+  mounted() {
+    this.resize();
+    this.$resizeListener = window.addEventListener("resize", debounce(this.resize, 300));
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.$resizeListener);
+  },
+  methods: {
+    resize() {
+      this.$store.commit("breakpoints/setSizes", window.innerWidth);
+    },
   },
 };
 </script>
 
 <style lang="stylus">
+@import '~assets/breakpoints'
+
 $menu-height = 64px
 
 html
@@ -43,9 +66,12 @@ html
   max-height 100vh
   height 100vh
   display grid
-  grid-template-columns 1fr $menu-height
+  grid-template-columns 1fr
 
-.menu
+  @media $breakpoints-spec.lg-and-up
+    grid-template-columns 1fr $menu-height
+
+.menu-desktop
   height $menu-height
   width 100vh
 </style>
