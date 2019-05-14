@@ -1,12 +1,12 @@
 <template lang="pug">
-.menu-toggle
-  .toggle(:class="{'is-active': isActive}")
+.menu-toggle(@click="$emit('input', !value)")
+  .toggle(:class="{'is-active': value}")
 </template>
 
 <script>
 export default {
   props: {
-    isActive: {
+    value: {
       type: Boolean,
       required: true,
     },

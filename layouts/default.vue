@@ -2,10 +2,13 @@
 .layout
   cloak
   nuxt
-  menu-desktop
+  menu-mobile(v-if="$sizes.md_and_down")
+  menu-desktop.menu-desktop(v-else)
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 import { debounce } from "lodash";
 
 import Cloak from "@/components/Cloak.vue";
@@ -23,9 +26,14 @@ export default {
       $resizeListener: null,
     };
   },
+  computed: {
+    ...mapState({
+      $sizes: state => state.breakpoints.sizes,
+    }),
+  },
   mounted() {
     this.resize();
-    this.$resizeListener = window.addEventListener("resize", debounce(this.resize, 300));
+    this.$resizeListener = window.addEventListener("resize", this.resize);
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.$resizeListener);
@@ -65,10 +73,10 @@ html
   min-height 100vh
   max-height 100vh
   height 100vh
-  display grid
-  grid-template-columns 1fr
 
   @media $breakpoints-spec.lg-and-up
+    display grid
+    grid-template-columns 1fr
     grid-template-columns 1fr $menu-height
 
 .menu-desktop
