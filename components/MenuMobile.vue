@@ -26,9 +26,13 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/breakpoints'
+@import '~assets/colors'
 
 $menu-toggle-padding = 16px
 $menu-toggle-height = 32px
+
+.menu-mobile
+  font-weight bold
 
 .menu-toggle
   position fixed
@@ -40,21 +44,32 @@ $menu-toggle-height = 32px
 .overlay
   display grid
   grid-auto-rows 64px
-  padding $menu-toggle-padding + 32px
+  padding $menu-toggle-padding + 32px 0
   position fixed
   top 0
   bottom 0
-  left 100vh
+  left 100vw
   right 0
-  background white
+  background $colors-black
   z-index -1
   opacity 0
   transition all 0.3s
 
+  & > *
+    border-bottom 1px dashed $colors-grey
+
   &.is-open
-    left 50vh
+    left 0
     z-index 998
     opacity 1
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow 0 14px 28px rgba($colors-black, 0.25), 0 10px 10px rgba($colors-black ,0.22)
 
+    @media $breakpoints-spec.sm-and-up
+      left 50vw
+
+a
+  display grid
+  align-content center
+  padding 0 32px
+  color $colors-white
 </style>

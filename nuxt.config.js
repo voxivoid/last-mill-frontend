@@ -1,6 +1,7 @@
 import pkg from "./package";
 import i18n from "./i18n";
 
+
 export default {
   mode: "spa",
 
@@ -16,6 +17,7 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { href: "https://fonts.googleapis.com/css?family=Maven+Pro", rel: "stylesheet" },
     ],
   },
 

@@ -1,7 +1,8 @@
 <template lang="pug">
 .layout
   cloak
-  nuxt
+  simplebar.page
+    nuxt
   menu-mobile(v-if="$sizes.md_and_down")
   menu-desktop.menu-desktop(v-else)
 </template>
@@ -9,7 +10,8 @@
 <script>
 import { mapState } from "vuex";
 
-import { debounce } from "lodash";
+import simplebar from "simplebar-vue";
+import "simplebar/dist/simplebar.min.css";
 
 import Cloak from "@/components/Cloak.vue";
 import MenuDesktop from "@/components/MenuDesktop.vue";
@@ -17,6 +19,7 @@ import MenuMobile from "@/components/MenuMobile.vue";
 
 export default {
   components: {
+    simplebar,
     Cloak,
     MenuDesktop,
     MenuMobile,
@@ -48,12 +51,12 @@ export default {
 
 <style lang="stylus">
 @import '~assets/breakpoints'
+@import '~assets/colors'
 
-$menu-height = 64px
+$menu-height = 65px
 
 html
-  font-family 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif
+  font-family 'Maven Pro', sans-serif
   font-size 16px
   word-spacing 1px
   -ms-text-size-adjust 100%
@@ -68,6 +71,8 @@ html
   box-sizing border-box
   margin 0
 
+a
+  text-decoration none
 
 .layout
   min-height 100vh
@@ -82,4 +87,19 @@ html
 .menu-desktop
   height $menu-height
   width 100vh
+
+.page
+  min-height 100vh
+  max-height 100vh
+  overflow-y auto
+
+.simplebar-track
+  .simplebar-scrollbar
+    &:before
+      background $colors-white
+      opacity 0.5
+
+    &.simplebar-visible
+      &:before
+        opacity 1
 </style>

@@ -22,6 +22,8 @@
     "nuxt-i18n": "^5.11.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "simplebar": "^4.0.0",
+    "simplebar-vue": "^1.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   },

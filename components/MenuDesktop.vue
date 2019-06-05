@@ -16,6 +16,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/breakpoints'
+@import '~assets/colors'
 
 .menu-desktop
   display grid
@@ -30,18 +31,21 @@ export default {
   transform-origin 0 0
   transform rotate(90deg)
   white-space nowrap
+  background $colors-black
 
   a
-    text-decoration none
     display grid
     align-content center
     justify-content center
     position relative
     overflow hidden
+    color $colors-white
+
+    .base, .hover
+      transition all .3s
 
     &:hover
       .base, .hover
-        transition all .3s
         transform translateY(100%)
 
 .base
@@ -50,8 +54,9 @@ export default {
 .hover
   position absolute
   top -100%
-  color red
+  font-weight bold
 
 .placeholder
   visibility hidden
+  font-weight bold
 </style>

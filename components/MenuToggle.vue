@@ -15,8 +15,10 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-$hamburger-color = black
-$cross-color = black
+@import '~assets/colors'
+
+$hamburger-color = $colors-white
+$cross-color = $colors-white
 
 .menu-toggle
   position relative
