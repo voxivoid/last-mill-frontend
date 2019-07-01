@@ -22,6 +22,7 @@ export default {
 
 $overlay-background-color = $colors-white
 $name-background-color = $colors-white
+$animation-duration = 0.3s
 
 .artist-thumbnail
   position relative
@@ -36,23 +37,31 @@ $name-background-color = $colors-white
   right 0
   background $overlay-background-color
   opacity 0
-  transition opacity 0.3s
+  transition opacity $animation-duration
 
   &:hover
     opacity 0.2
 
+    @media $breakpoints-spec.lg-and-up
+      & + .name
+        opacity 1
+        right 0
+
+
 .name
-  display grid
-  align-content center
-  grid-auto-flow column
-  grid-auto-columns max-content
-  grid-gap 32px
   padding 16px 32px
   background $name-background-color
   position absolute
   bottom 0
-  right 0
+  left 0
   font-weight bold
+  transition all $animation-duration
+  text-align right
+
+  @media $breakpoints-spec.lg-and-up
+    overflow hidden
+    opacity 0
+    right 100%
 
 img
   object-fit cover
