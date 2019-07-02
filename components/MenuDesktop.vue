@@ -42,7 +42,7 @@ export default {
     color $colors-white
 
     .base, .hover
-      transition all .3s
+      transition transform .3s
 
     &:hover
       .base, .hover
