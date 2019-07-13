@@ -1,6 +1,6 @@
 <template lang="pug">
 .artists
-  artist-thumbnail(v-for="artist in artists" :key="artist.name" :artist="artist")
+  artist-thumbnail(v-for="artist in artists" :key="artist.name" :artist="artist" @click.native="$router.push(`/artists/${artist.id}`)")
 </template>
 
 <script>
