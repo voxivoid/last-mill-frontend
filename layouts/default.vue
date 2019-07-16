@@ -1,8 +1,7 @@
 <template lang="pug">
 .layout
   cloak
-  simplebar.page
-    nuxt
+  nuxt.page-scroll
   menu-mobile(v-if="$sizes.md_and_down")
   menu-desktop.menu-desktop(v-else)
 </template>
@@ -10,16 +9,12 @@
 <script>
 import { mapState } from "vuex";
 
-import simplebar from "simplebar-vue";
-import "simplebar/dist/simplebar.min.css";
-
 import Cloak from "@/components/Cloak.vue";
 import MenuDesktop from "@/components/MenuDesktop.vue";
 import MenuMobile from "@/components/MenuMobile.vue";
 
 export default {
   components: {
-    simplebar,
     Cloak,
     MenuDesktop,
     MenuMobile,
@@ -88,7 +83,7 @@ a
   height $menu-height
   width 100vh
 
-.page
+.page-scroll
   min-height 100vh
   max-height 100vh
   overflow-y auto

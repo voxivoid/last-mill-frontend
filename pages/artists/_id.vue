@@ -3,23 +3,25 @@
   .image(:style="{backgroundImage: `url(${artist.photo})`}")
     .name {{ artist.name }}
 
-  .artist-info
-    section
-      h1 {{ $t("biography") }}
-      p {{ artist[`bio_${locale}`] }}
+  simplebar.page-scroll
+    .artist-info
+      section
+        h1 {{ $t("biography") }}
+        p {{ artist[`bio_${locale}`] }}
 
-    section
-      h1 {{ $t("releases") }}
-      .releases
-        release-thumbnail(v-for="release in artist.releases" :key="release.title" :release="release")
+      section
+        h1 {{ $t("releases") }}
+        .releases
+          release-thumbnail(v-for="release in artist.releases" :key="release.title" :release="release")
 
-    section
-      h1 {{ $t("socialNetworks") }}
-
+      section
+        h1 {{ $t("socialNetworks") }}
 </template>
 
 <script>
 import { mapState } from "vuex";
+
+import simplebar from "simplebar-vue";
 
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
@@ -27,6 +29,7 @@ import artists from "@/mocks/artists";
 
 export default {
   components: {
+    simplebar,
     ReleaseThumbnail,
   },
   data() {

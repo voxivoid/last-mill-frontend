@@ -1,14 +1,19 @@
 <template lang="pug">
-.artists
-  artist-thumbnail(v-for="artist in artists" :key="artist.name" :artist="artist" @click.native="$router.push(`/artists/${artist.id}`)")
+simplebar
+  .artists
+    artist-thumbnail(v-for="artist in artists" :key="artist.name" :artist="artist" @click.native="$router.push(`/artists/${artist.id}`)")
 </template>
 
 <script>
-import artists from "@/mocks/artists";
+import simplebar from "simplebar-vue";
+
 import ArtistThumbnail from "@/components/ArtistThumbnail.vue";
+
+import artists from "@/mocks/artists";
 
 export default {
   components: {
+    simplebar,
     ArtistThumbnail,
   },
   data() {
