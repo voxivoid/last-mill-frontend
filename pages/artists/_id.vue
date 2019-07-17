@@ -4,25 +4,13 @@
     .name {{ artist.name }}
 
   simplebar.page-scroll
-    .artist-info
-      section
-        h1 {{ $t("biography") }}
-        p {{ artist[`bio_${locale}`] }}
-
-      section
-        h1 {{ $t("releases") }}
-        .releases
-          release-thumbnail(v-for="release in artist.releases" :key="release.title" :release="release")
-
-      section
-        h1 {{ $t("socialNetworks") }}
+    artist-info(:artist="artist")
 </template>
 
 <script>
-import { mapState } from "vuex";
-
 import simplebar from "simplebar-vue";
 
+import ArtistInfo from "@/components/ArtistInfo.vue";
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
 import artists from "@/mocks/artists";
@@ -30,31 +18,13 @@ import artists from "@/mocks/artists";
 export default {
   components: {
     simplebar,
+    ArtistInfo,
     ReleaseThumbnail,
   },
   data() {
     return {
       artist: artists.find(artist => artist.id === this.$route.params.id),
     };
-  },
-  computed: {
-    ...mapState({
-      locale: state => state.i18n.locale,
-    }),
-  },
-  i18n: {
-    messages: {
-      en: {
-        biography: "Biography",
-        releases: "Releases",
-        socialNetworks: "Social networks",
-      },
-      pt: {
-        biography: "Biografia",
-        releases: "Lançamentos",
-        socialNetworks: "Redes sociais",
-      },
-    },
   },
 };
 </script>
@@ -63,18 +33,15 @@ export default {
 @import '~assets/breakpoints'
 @import '~assets/colors'
 
-h1
-  font-family "Arial black"
-  font-weight bold
-  margin-bottom 16px
-
-p
-  white-space pre-wrap
-
 .artist
-  background $colors-white
+  color $colors-white
+  background $colors-black
+  min-height 100vh
+  max-height 100vh
   display grid
-  min-height: 100vh;
+
+  @media $breakpoints-spec.md-and-down
+    grid-template-rows 200px 1fr
 
   @media $breakpoints-spec.lg-and-up
     grid-template-columns 1fr 2fr
@@ -87,23 +54,12 @@ p
   background-size cover
   background-position center
 
+
 .name
+  font-size 32px
+  color $colors-white
+  font-weight bold
+
   @media $breakpoints-spec.lg-and-up
-    color $colors-white
     font-size 64px
-    font-weight bold
-
-.artist-info
-  display grid
-  grid-gap 32px
-  overflow auto
-  padding 32px
-
-  @media $breakpoints-spec.lg-and-up
-    padding 64px
-
-.releases
-  display grid
-  grid-gap 16px
-  grid-template-columns 1fr 1fr 1fr 1fr
 </style>
