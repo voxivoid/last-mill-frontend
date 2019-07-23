@@ -1,15 +1,18 @@
 <template lang="pug">
-.artist
-  .image(:style="{backgroundImage: `url(${artist.photo})`}")
-    .name {{ artist.name }}
+component(:is="breakpoints.sizes.lg_and_up ? 'div' : 'simplebar'")
+  .artist
+    artist-image(:artist="artist")
 
-  simplebar.page-scroll
-    artist-info(:artist="artist")
+    component(:is="breakpoints.sizes.lg_and_up ? 'simplebar' : 'div'" :class="{'page-scroll': breakpoints.sizes.lg_and_up}")
+      artist-info(:artist="artist")
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 import simplebar from "simplebar-vue";
 
+import ArtistImage from "@/components/ArtistImage.vue";
 import ArtistInfo from "@/components/ArtistInfo.vue";
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
@@ -18,6 +21,7 @@ import artists from "@/mocks/artists";
 export default {
   components: {
     simplebar,
+    ArtistImage,
     ArtistInfo,
     ReleaseThumbnail,
   },
@@ -25,6 +29,11 @@ export default {
     return {
       artist: artists.find(artist => artist.id === this.$route.params.id),
     };
+  },
+  computed: {
+    ...mapState({
+      breakpoints: state => state.breakpoints,
+    }),
   },
 };
 </script>
@@ -36,30 +45,16 @@ export default {
 .artist
   color $colors-white
   background $colors-black
-  min-height 100vh
-  max-height 100vh
   display grid
 
   @media $breakpoints-spec.md-and-down
     grid-template-rows 200px 1fr
 
+    .artist-image
+      position sticky
+      top -128px
+      border-bottom 1px solid $colors-white
+
   @media $breakpoints-spec.lg-and-up
     grid-template-columns 1fr 2fr
-
-.image
-  display grid
-  place-items end end
-  padding 16px 32px
-  overflow hidden
-  background-size cover
-  background-position center
-
-
-.name
-  font-size 32px
-  color $colors-white
-  font-weight bold
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 64px
 </style>
