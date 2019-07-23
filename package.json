@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "serve -s build -p $PORT",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
@@ -23,6 +23,7 @@
     "nuxt-i18n": "^5.11.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "serve": "^11.1.0",
     "simplebar": "^4.0.0",
     "simplebar-vue": "^1.0.0",
     "stylus": "^0.54.5",
