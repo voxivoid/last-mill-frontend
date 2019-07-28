@@ -1,8 +1,7 @@
 <template lang="pug">
 .artist-thumbnail
   .overlay
-  .name-grid
-    .name {{ artist.name }}
+  .name {{ artist.name }}
   img(:src="artist.photo")
 </template>
 
@@ -63,7 +62,7 @@ $animation-duration = 0.3s
     &:hover
       opacity 0.2
 
-      & + .name-grid
+      & + .name
         opacity 1
         right 0
 
@@ -71,33 +70,24 @@ $animation-duration = 0.3s
         filter blur(10px)
         transform scale(1.2)
 
-.name-grid
-  display grid
-  align-items end
-  justify-content end
-  position absolute
-  top 0
-  bottom 0
-  left 0
-  right 0
-  z-index 1
-
-  @media $breakpoints-spec.lg-and-up
-    opacity 0
-    align-items end
-    justify-content end
-    transition opacity $animation-duration
-
 .name
   padding 16px 32px
-  background $name-background-color
+  font-size 26px
   font-weight bold
+  position absolute
+  bottom 0
+  left 0
+  color $colors-white
+  z-index 1
+
+  @media $breakpoints-spec.md-and-up
+    font-size 32px
 
   @media $breakpoints-spec.lg-and-up
     background transparent
-    color $colors-white
     font-size 64px
-    font-weight bold
+    opacity 0
+    transition opacity $animation-duration
 
 img
   object-fit cover
