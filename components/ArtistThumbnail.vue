@@ -71,7 +71,7 @@ $animation-duration = 0.3s
         transform scale(1.2)
 
 .name
-  padding 16px 32px
+  padding 8px 16px
   font-size 26px
   font-weight bold
   position absolute
@@ -81,6 +81,7 @@ $animation-duration = 0.3s
   z-index 1
 
   @media $breakpoints-spec.md-and-up
+    padding 16px 32px
     font-size 32px
 
   @media $breakpoints-spec.lg-and-up
