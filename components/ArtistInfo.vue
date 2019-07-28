@@ -11,6 +11,9 @@
 
   section
     h1 {{ $t("socialNetworks") }}
+    .social-networks
+      a(v-for="socialNetwork in socialNetworks" :key="socialNetwork.id" :href="artist[socialNetwork.id]" target="_blank" rel="noopener noreferrer")
+        i.fab(:class="socialNetwork.icon")
 </template>
 
 <script>
@@ -27,6 +30,24 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  data() {
+    return {
+      socialNetworks: [
+        {
+          id: "instagram",
+          icon: "fa-instagram",
+        },
+        {
+          id: "youtube",
+          icon: "fa-youtube",
+        },
+        {
+          id: "facebook",
+          icon: "fa-facebook-square",
+        },
+      ],
+    };
   },
   computed: {
     ...mapState({
@@ -78,4 +99,17 @@ p
 
   @media $breakpoints-spec.lg-and-up
     grid-template-columns 1fr 1fr 1fr 1fr
+
+.social-networks
+  display grid
+  grid-auto-flow column
+  grid-gap 32px
+  width max-content
+
+  a
+    text-decoration none
+
+  .fab
+    color $colors-white
+    font-size 32px
 </style>
