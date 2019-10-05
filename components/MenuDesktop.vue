@@ -1,15 +1,24 @@
 <template lang="pug">
 .menu-desktop
-  nuxt-link(v-for="page in pages" :key="page.to" :to="page.to")
-    span.placeholder {{ page.name }}
-    span.base {{ page.name }}
-    span.hover {{ page.name }}
+  nuxt-link.logo(to="/")
+    windmill(fill="white")
+
+  .links
+    nuxt-link.link(v-for="page in pages" :key="page.to" :to="page.to")
+      span.placeholder {{ page.name }}
+      span.base {{ page.name }}
+      span.hover {{ page.name }}
 </template>
 
 <script>
+import Windmill from "@/components/svgs/Windmill.vue";
+
 import MenuHelpers from "@/mixins/helpers.menu";
 
 export default {
+  components: {
+    Windmill,
+  },
   mixins: [MenuHelpers],
 };
 </script>
@@ -22,7 +31,7 @@ export default {
   display grid
   align-content center
   grid-auto-flow column
-  grid-auto-columns max-content
+  grid-template-columns auto 1fr
   grid-gap 32px
   padding 16px 32px
   position absolute
@@ -33,7 +42,7 @@ export default {
   white-space nowrap
   background $colors-black
 
-  a
+  .link
     display grid
     align-content center
     justify-content center
@@ -47,6 +56,21 @@ export default {
     &:hover
       .base, .hover
         transform translateY(100%)
+
+.links
+  display grid
+  align-content center
+  grid-auto-flow column
+  grid-auto-columns max-content
+  grid-gap 32px
+
+.logo
+  height 100%
+  transform rotate(-90deg)
+
+  svg
+    object-fit contain
+    height 100%
 
 .base
   position absolute

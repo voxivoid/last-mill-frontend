@@ -2,18 +2,22 @@
 .menu-mobile
   menu-toggle.menu-toggle(v-model="isOpen")
   .overlay(:class="{'is-open': isOpen}")
-    nuxt-link(v-for="page in pages" :key="page.to" :to="page.to" @click.native="isOpen = !isOpen")
+    nuxt-link.logo(to="/")
+      windmill(fill="white")
+    nuxt-link.link(v-for="page in pages" :key="page.to" :to="page.to" @click.native="isOpen = !isOpen")
       span.base {{ page.name }}
 </template>
 
 <script>
 import MenuToggle from "@/components/MenuToggle.vue";
+import Windmill from "@/components/svgs/Windmill.vue";
 
 import MenuHelpers from "@/mixins/helpers.menu";
 
 export default {
   components: {
     MenuToggle,
+    Windmill,
   },
   mixins: [MenuHelpers],
   data() {
@@ -55,7 +59,7 @@ $menu-toggle-height = 32px
   opacity 0
   transition all 0.3s
 
-  & > *
+  & > .link
     border-bottom 1px dashed $colors-grey
 
   &.is-open
@@ -67,9 +71,17 @@ $menu-toggle-height = 32px
     @media $breakpoints-spec.sm-and-up
       left 50vw
 
-a
+.link
   display grid
   align-content center
   padding 0 32px
   color $colors-white
+
+.logo
+  display flex
+  align-content center
+  justify-content center
+  margin-bottom 16px
+  svg
+    height 100%
 </style>
