@@ -2,7 +2,7 @@
 .menu-mobile
   menu-toggle.menu-toggle(v-model="isOpen")
   .overlay(:class="{'is-open': isOpen}")
-    nuxt-link.logo(to="/")
+    nuxt-link.logo(to="/" @click.native="isOpen = !isOpen")
       windmill(fill="white")
     nuxt-link.link(v-for="page in pages" :key="page.to" :to="page.to" @click.native="isOpen = !isOpen")
       span.base {{ page.name }}
