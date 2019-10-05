@@ -97,4 +97,7 @@ a
     &.simplebar-visible
       &:before
         opacity 1
+
+.simplebar-content > *
+  min-height 100vh
 </style>
