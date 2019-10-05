@@ -43,8 +43,8 @@ export default {
           icon: "fa-youtube",
         },
         {
-          id: "facebook",
-          icon: "fa-facebook-square",
+          id: "spotify",
+          icon: "fa-spotify",
         },
       ],
     };
