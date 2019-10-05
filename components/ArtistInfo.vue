@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import LocaleHelpers from "@/mixins/helpers.locale";
 
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
@@ -25,6 +25,7 @@ export default {
   components: {
     ReleaseThumbnail,
   },
+  mixins: [LocaleHelpers],
   props: {
     artist: {
       type: Object,
@@ -48,11 +49,6 @@ export default {
         },
       ],
     };
-  },
-  computed: {
-    ...mapState({
-      locale: state => state.i18n.locale,
-    }),
   },
   i18n: {
     messages: {
