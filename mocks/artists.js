@@ -25,13 +25,6 @@ export default [
         artists: [],
       },
       {
-        title: "Faces of a Hero (EP)",
-        image: "",
-        youtube: "https://www.youtube.com/watch?v=_eqdcCAnw6o&list=PL3-BakGZzdQNoUSUreV8Emn5DXx2Mjw61",
-        spotify: "https://open.spotify.com/album/6ehYl85exKez9j2glHQK8c",
-        artists: [],
-      },
-      {
         title: "Cana Verde Serrana",
         image: "",
         youtube: "https://youtu.be/rRqeSxn6OVg",
