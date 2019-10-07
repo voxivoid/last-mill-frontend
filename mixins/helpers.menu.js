@@ -11,8 +11,8 @@ export default {
           to: "/artists",
         },
         {
-          name: this.$t("portfolio"),
-          to: "/portfolio",
+          name: this.$t("releases"),
+          to: "/releases",
         },
         {
           name: this.$t("services"),
@@ -30,14 +30,14 @@ export default {
       en: {
         aboutUs: "About us",
         artists: "Artists",
-        portfolio: "Portfolio",
+        releases: "Releases",
         services: "Services",
         contacts: "Contacts",
       },
       pt: {
         aboutUs: "Sobre nós",
         artists: "Artistas",
-        portfolio: "Portfólio",
+        releases: "Portfólio",
         services: "Serviços",
         contacts: "Contactos",
       },

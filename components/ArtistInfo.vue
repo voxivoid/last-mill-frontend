@@ -72,7 +72,6 @@ export default {
 @import '~assets/colors'
 
 h1
-  font-family "Arial"
   font-weight bold
   margin-bottom 16px
 
