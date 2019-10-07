@@ -7,7 +7,7 @@ export default [
     bio_en: "Koopper lies in the shadow of a wolf, consistent, persistent, detailed and always true to what defines him. His last song is always the best song, because it is the whole of all the experience and knowledge he had gained. Koopper begins for 2020 as one of the faces of LAST MILL, LABEL.",
     instagram: "https://www.instagram.com/koopper_music_producer",
     youtube: "https://www.youtube.com/channel/UCg4Hhrigl9jKMfAlhSBbxWw",
-    spotify: "https://open.spotify.com/artist/6fwQAGUlcgPXwGfIQfdFxC",
+    spotify: "https://open.spotify.com/artist/0QcBbRzduA1oKOKBi3lmPE",
     website: "https://www.koopper.com/",
     releases: [
       {
@@ -28,6 +28,13 @@ export default [
         title: "Cana Verde Serrana",
         image: "",
         youtube: "https://youtu.be/rRqeSxn6OVg",
+        spotify: "",
+        artists: [],
+      },
+      {
+        title: "Vira d'onde vens Maria",
+        image: "",
+        youtube: "https://youtu.be/kWaNBBanPSc",
         spotify: "",
         artists: [],
       },

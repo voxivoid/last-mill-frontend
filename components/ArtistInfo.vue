@@ -12,8 +12,9 @@
   section
     h1 {{ $t("socialNetworks") }}
     .social-networks
-      a(v-for="socialNetwork in socialNetworks" :key="socialNetwork.id" :href="artist[socialNetwork.id]" target="_blank" rel="noopener noreferrer")
-        i.fab(:class="socialNetwork.icon")
+      template(v-for="socialNetwork in socialNetworks")
+        a(v-if="artist[socialNetwork.id]" :key="socialNetwork.id" :href="artist[socialNetwork.id]" target="_blank" rel="noopener noreferrer")
+          i(:class="socialNetwork.icon")
 </template>
 
 <script>
@@ -37,15 +38,19 @@ export default {
       socialNetworks: [
         {
           id: "instagram",
-          icon: "fa-instagram",
+          icon: "fab fa-instagram",
         },
         {
           id: "youtube",
-          icon: "fa-youtube",
+          icon: "fab fa-youtube",
         },
         {
           id: "spotify",
-          icon: "fa-spotify",
+          icon: "fab fa-spotify",
+        },
+        {
+          id: "website",
+          icon: "fas fa-link",
         },
       ],
     };
@@ -104,7 +109,7 @@ p
   a
     text-decoration none
 
-  .fab
+  i
     color $colors-white
     font-size 32px
 </style>
