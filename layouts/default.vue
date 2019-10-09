@@ -84,6 +84,7 @@ a
 .menu-desktop
   height $menu-height
   width 100vh
+  overflow-y auto
 
 .page-scroll
   min-height 100vh
