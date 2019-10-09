@@ -21,7 +21,7 @@ export default {
   data() {
     let releases = [];
 
-    artists.map(artist => releases = releases.concat(artist.releases).concat(artist.releases).concat(artist.releases));
+    artists.map(artist => releases = releases.concat(artist.releases));
 
     return {
       releases,
