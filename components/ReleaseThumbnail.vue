@@ -6,7 +6,6 @@
     template(v-for="socialNetwork in socialNetworks")
       a(v-if="release[socialNetwork.id]" :key="socialNetwork.id" :href="release[socialNetwork.id]" target="_blank" rel="noopener noreferrer")
         i.fab(:class="socialNetwork.icon")
-
 </template>
 
 <script>
@@ -40,6 +39,7 @@ export default {
 .release-thumbnail
   display grid
   grid-gap 8px
+  color $colors-white
 
 img
   width 100%

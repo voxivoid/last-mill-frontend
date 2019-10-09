@@ -42,6 +42,8 @@ export default {
 .about-us
   color $colors-white
   background $colors-black
-  padding 64px
+  padding 32px
 
+  @media $breakpoints-spec.lg-and-up
+    padding 64px
 </style>
