@@ -25,6 +25,7 @@ export default {
   overflow hidden
   background-size cover
   background-position center
+  background-color $colors-black
 
   @media $breakpoints-spec.lg-and-up
     place-items end end

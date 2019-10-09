@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import colors from "@/assets/colors";
+import { $colors as colors } from "@/assets/colors";
 
 export default {
   props: {
