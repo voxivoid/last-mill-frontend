@@ -1,7 +1,8 @@
 <template lang="pug">
-.about-us.simplebar
-  h1 {{ $t("aboutUs") }}
-  p {{ aboutUs[locale] }}
+simplebar
+  .about-us
+    h1 {{ $t("aboutUs") }}
+    p {{ aboutUs[locale] }}
 </template>
 
 <script>

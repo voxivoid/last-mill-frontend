@@ -1,23 +1,27 @@
 <template lang="pug">
-.releases
-  h1 {{ $t("releases") }}
-  .grid
-    release-thumbnail(v-for="release in releases" :key="release.title" :release="release")
+simplebar
+  .releases
+    h1 {{ $t("releases") }}
+    .grid
+      release-thumbnail(v-for="release in releases" :key="release.title" :release="release")
 </template>
 
 <script>
+import simplebar from "simplebar-vue";
+
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
 import artists from "@/mocks/artists";
 
 export default {
   components: {
+    simplebar,
     ReleaseThumbnail,
   },
   data() {
     let releases = [];
 
-    artists.map(artist => releases = releases.concat(artist.releases));
+    artists.map(artist => releases = releases.concat(artist.releases).concat(artist.releases).concat(artist.releases));
 
     return {
       releases,
@@ -48,6 +52,8 @@ h1
   color $colors-white
   background $colors-black
   padding 32px
+  height 100%
+  width 100%
 
   @media $breakpoints-spec.lg-and-up
     padding 64px
