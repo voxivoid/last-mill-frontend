@@ -1,7 +1,9 @@
 <template lang="pug">
 .release-thumbnail
   img(:src="release.image")
-  .title {{ release.title }}
+  div
+    .title {{ release.title }}
+    .subtitle {{ release.subtitle }}
   .social-networks
     template(v-for="socialNetwork in socialNetworks")
       a(v-if="release[socialNetwork.id]" :key="socialNetwork.id" :href="release[socialNetwork.id]" target="_blank" rel="noopener noreferrer")
@@ -38,6 +40,7 @@ export default {
 
 .release-thumbnail
   display grid
+  grid-template-rows: 1fr;
   grid-gap 8px
   color $colors-white
 
@@ -45,8 +48,13 @@ img
   width 100%
 
 .title
+  font-size 16px
   text-align center
   font-weight bold
+
+.subtitle
+  font-size 14px
+  text-align center
 
 .social-networks
   display grid
@@ -60,5 +68,5 @@ img
 
   .fab
     color $colors-white
-    font-size 32px
+    font-size 24px
 </style>

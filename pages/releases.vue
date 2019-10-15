@@ -11,7 +11,7 @@ import simplebar from "simplebar-vue";
 
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
-import artists from "@/mocks/artists";
+import releases from "@/mocks/releases";
 
 export default {
   components: {
@@ -19,12 +19,8 @@ export default {
     ReleaseThumbnail,
   },
   data() {
-    let releases = [];
-
-    artists.map(artist => releases = releases.concat(artist.releases));
-
     return {
-      releases,
+      releases: releases.sort((a, b) => new Date(b.date) - new Date(a.date)),
     };
   },
   i18n: {

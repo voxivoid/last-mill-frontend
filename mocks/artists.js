@@ -9,50 +9,6 @@ export default [
     youtube: "https://www.youtube.com/channel/UCg4Hhrigl9jKMfAlhSBbxWw",
     spotify: "https://open.spotify.com/artist/0QcBbRzduA1oKOKBi3lmPE",
     website: "https://www.koopper.com/",
-    releases: [
-      {
-        title: "Afrodim",
-        image: "",
-        youtube: "https://youtu.be/EYZKjTyIyHI",
-        spotify: "https://open.spotify.com/track/6JF1QBOWJfBvJ4wR0xBnmJ",
-        artists: [],
-      },
-      {
-        title: "Faces of a Hero (EP)",
-        image: "",
-        youtube: "https://www.youtube.com/watch?v=_eqdcCAnw6o&list=PL3-BakGZzdQNoUSUreV8Emn5DXx2Mjw61",
-        spotify: "https://open.spotify.com/album/6ehYl85exKez9j2glHQK8c",
-        artists: [],
-      },
-      {
-        title: "Cana Verde Serrana",
-        image: "",
-        youtube: "https://youtu.be/rRqeSxn6OVg",
-        spotify: "",
-        artists: [],
-      },
-      {
-        title: "Vira d'onde vens Maria",
-        image: "",
-        youtube: "https://youtu.be/kWaNBBanPSc",
-        spotify: "",
-        artists: [],
-      },
-      {
-        title: "Chula d'Aldeia",
-        image: "",
-        youtube: "https://youtu.be/ileAX3aMy-8",
-        spotify: "",
-        artists: [],
-      },
-      {
-        title: "Peculiar",
-        image: "",
-        youtube: "https://youtu.be/k2FMbsq9wzQ",
-        spotify: "https://open.spotify.com/track/3Dxp0KBRlcn2mxgFjV8ofo",
-        artists: [],
-      },
-    ],
   },
   {
     id: "khernei",
@@ -63,22 +19,6 @@ export default [
     instagram: "https://www.instagram.com/khernei_/",
     youtube: "https://www.youtube.com/channel/UCQ5P-89N15RBByWllQZI53w",
     spotify: "https://open.spotify.com/artist/12sddw8oNkSFlYYkhAjAj1",
-    releases: [
-      {
-        title: "Tinder Girl",
-        image: "",
-        youtube: "https://youtu.be/StF6TzuH27M",
-        spotify: "https://open.spotify.com/track/11ns36QaCQb3Npdcq7M6vm",
-        artists: [],
-      },
-      {
-        title: "Only You",
-        image: "",
-        youtube: "",
-        spotify: "https://open.spotify.com/track/4tXktenIVzKKRzYzYYLeZt",
-        artists: [],
-      },
-    ],
   },
   {
     id: "voxivoid",
@@ -89,14 +29,5 @@ export default [
     instagram: "https://www.instagram.com/voxivoid",
     youtube: "https://www.youtube.com/c/voxivoid",
     spotify: "https://open.spotify.com/artist/6fwQAGUlcgPXwGfIQfdFxC",
-    releases: [
-      {
-        title: "Filho prodígio",
-        image: "https://i.vgy.me/5oHrYU.jpg",
-        youtube: "https://youtu.be/-lYwuT2vVns",
-        spotify: "https://open.spotify.com/track/5Ip1jmb8TgjYIdZKIaB3nu",
-        artists: [],
-      },
-    ],
   },
 ];

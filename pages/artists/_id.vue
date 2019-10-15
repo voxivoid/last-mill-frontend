@@ -17,6 +17,7 @@ import ArtistInfo from "@/components/ArtistInfo.vue";
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
 import artists from "@/mocks/artists";
+import releases from "@/mocks/releases";
 
 export default {
   components: {
@@ -26,8 +27,14 @@ export default {
     ReleaseThumbnail,
   },
   data() {
+    const artist = artists.find(artist => artist.id === this.$route.params.id);
+
+    artist.releases = releases.filter(release => release.artists.includes(artist.id)).sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    console.log(artist.releases);
+
     return {
-      artist: artists.find(artist => artist.id === this.$route.params.id),
+      artist,
     };
   },
   computed: {
