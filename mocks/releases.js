@@ -6,7 +6,7 @@ export default [
     image: "https://i.vgy.me/5oHrYU.jpg",
     youtube: "https://youtu.be/-lYwuT2vVns",
     spotify: "https://open.spotify.com/track/5Ip1jmb8TgjYIdZKIaB3nu",
-    artists: ["voxivoid", "koopper"],
+    artists: ["voxivoid", "koopper", "fontourafx", "ragal"],
   },
   {
     title: "I don't know what to do",
@@ -15,7 +15,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=NLzRGaEX2-8",
     spotify: "https://open.spotify.com/track/2o9dHFZ5ovEQldyEvptFUt",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Refugiado",
@@ -24,7 +24,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=omuBF6tMStY",
     spotify: "",
-    artists: [],
+    artists: ["fontourafx", "ragal"],
   },
   {
     title: "Doa a quem doer",
@@ -33,7 +33,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=Sh6piDa2TR4",
     spotify: "",
-    artists: [],
+    artists: ["fontourafx", "ragal"],
   },
   {
     title: "Queque foi - Boss AC (Remix)",
@@ -42,7 +42,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=hIu6Vp1yopo",
     spotify: "",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx"],
   },
   {
     title: "Afrodim",
@@ -51,7 +51,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/EYZKjTyIyHI",
     spotify: "https://open.spotify.com/track/6JF1QBOWJfBvJ4wR0xBnmJ",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Faces of a Hero (EP)",
@@ -60,7 +60,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=_eqdcCAnw6o&list=PL3-BakGZzdQNoUSUreV8Emn5DXx2Mjw61",
     spotify: "https://open.spotify.com/album/6ehYl85exKez9j2glHQK8c",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Follow",
@@ -69,7 +69,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=rcIT5zAYoH8",
     spotify: "https://open.spotify.com/album/5OOU53yAzq53QXZN0AatLX",
-    artists: [],
+    artists: ["fontourafx"],
   },
   {
     title: "Cana Verde Serrana",
@@ -78,7 +78,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/rRqeSxn6OVg",
     spotify: "",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Silent Night",
@@ -87,7 +87,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=Zd1zJJs-utQ",
     spotify: "",
-    artists: ["khernei", "koopper"],
+    artists: ["khernei", "koopper", "fontourafx", "ragal"],
   },
   {
     title: "Tinder Girl",
@@ -96,7 +96,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/StF6TzuH27M",
     spotify: "https://open.spotify.com/track/11ns36QaCQb3Npdcq7M6vm",
-    artists: ["khernei", "koopper"],
+    artists: ["khernei", "koopper", "fontourafx", "ragal"],
   },
   {
     title: "Vira d'onde vens Maria",
@@ -105,7 +105,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/kWaNBBanPSc",
     spotify: "",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "T1.E1 Koopper's Lab",
@@ -114,7 +114,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=BHLriemBC9w",
     spotify: "",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "T1.E2 Koopper's Lab",
@@ -123,7 +123,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=K0_V90WgU-M",
     spotify: "",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Chula d'Aldeia",
@@ -132,7 +132,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/ileAX3aMy-8",
     spotify: "",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "T1.E3 Koopper's Lab",
@@ -141,7 +141,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=O1uJ8WeLFMU",
     spotify: "",
-    artists: ["koopper", "khernei"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Bola Preta",
@@ -150,7 +150,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=JVftGOaBhAE",
     spotify: "https://open.spotify.com/track/7JkEkTT7eSMqjOKcpRNFcy",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "De Nada (Curta Metragem)",
@@ -168,7 +168,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=wp6IdN27_FM",
     spotify: "",
-    artists: ["voxivoid"],
+    artists: ["voxivoid", "fontourafx", "ragal"],
   },
   {
     title: "I don't know what to do (Lyric Breakdown)",
@@ -177,7 +177,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=yUXamYDga_8",
     spotify: "",
-    artists: [],
+    artists: ["fontourafx", "ragal"],
   },
   {
     title: "T1.E4 Koopper's Lab",
@@ -186,7 +186,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=uRqeaG3BTWM",
     spotify: "",
-    artists: ["koopper", "voxivoid"],
+    artists: ["koopper", "voxivoid", "fontourafx", "ragal"],
   },
   {
     title: "Bola Preta (Lyric Breakdown)",
@@ -195,7 +195,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=f4S3v__IBhU",
     spotify: "",
-    artists: [],
+    artists: ["fontourafx", "ragal"],
   },
   {
     title: "Peculiar",
@@ -204,7 +204,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/k2FMbsq9wzQ",
     spotify: "https://open.spotify.com/track/3Dxp0KBRlcn2mxgFjV8ofo",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "30 seconds of emotion",
@@ -213,7 +213,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=4fqjfFfWDqw",
     spotify: "",
-    artists: [],
+    artists: ["koopper", "fontourafx"],
   },
   {
     title: "Off Set",
@@ -231,7 +231,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=X3M54TeeE2g",
     spotify: "https://open.spotify.com/track/2qInR4dxwpiyccgyZiOyvR",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx"],
   },
   {
     title: "Following the Sun",
@@ -240,7 +240,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=lAl9MpzbvsM",
     spotify: "https://open.spotify.com/track/4tdhrKmcS4Z2YhUSEZBC67",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Levels",
@@ -258,7 +258,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=Bjr5HADyMv0",
     spotify: "https://open.spotify.com/track/76Y5JwnxwyT5mAWfozs242",
-    artists: ["koopper"],
+    artists: ["koopper", "fontourafx", "ragal"],
   },
   {
     title: "Hoje N'Sta na Block",
@@ -272,10 +272,10 @@ export default [
   {
     title: "Only You",
     subtitle: "Khernei",
-    date: "",
+    date: "2019-11-30",
     image: "",
     youtube: "",
     spotify: "https://open.spotify.com/track/4tXktenIVzKKRzYzYYLeZt",
-    artists: ["khernei"],
+    artists: ["khernei", "koopper", "fontourafx", "ragal"],
   },
 ];
