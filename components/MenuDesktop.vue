@@ -1,10 +1,10 @@
 <template lang="pug">
 .menu-desktop
-  nuxt-link.logo(to="/")
+  nuxt-link.logo(:to="localePath('index')")
     windmill(fill="white")
 
   .links
-    nuxt-link.link(v-for="page in pages" :key="page.to" :to="page.to")
+    nuxt-link.link(v-for="page in pages" :key="page.to" :to="localePath(page.to)")
       span.placeholder {{ page.name }}
       span.base {{ page.name }}
       span.hover {{ page.name }}

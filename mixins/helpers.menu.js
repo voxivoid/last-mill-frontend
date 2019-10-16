@@ -4,23 +4,23 @@ export default {
       pages: [
         {
           name: this.$t("aboutUs"),
-          to: "/about-us",
+          to: "about-us",
         },
         {
           name: this.$t("artists"),
-          to: "/artists",
+          to: "artists",
         },
         {
           name: this.$t("releases"),
-          to: "/releases",
+          to: "releases",
         },
         {
           name: this.$t("services"),
-          to: "/services",
+          to: "services",
         },
         {
           name: this.$t("contacts"),
-          to: "/contacts",
+          to: "contacts",
         },
       ],
     };
