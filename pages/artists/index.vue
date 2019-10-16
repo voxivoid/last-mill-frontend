@@ -1,7 +1,8 @@
 <template lang="pug">
 simplebar
   .artists(:class="artists.length % 2 !== 0 ? 'odd' : ''")
-    artist-thumbnail(v-for="(artist, i) in artists" :key="artist.name" :artist="artist" @click.native="$router.push(`/artists/${artist.id}`)")
+    nuxt-link(v-for="(artist, i) in artists" :key="artist.name" :to="localePath({ name: 'artists-id', params: { id: artist.id }})")
+      artist-thumbnail(:artist="artist")
 </template>
 
 <script>
