@@ -1,7 +1,7 @@
 <template lang="pug">
 simplebar
-  .artists
-    artist-thumbnail(v-for="artist in artists" :key="artist.name" :artist="artist" @click.native="$router.push(`/artists/${artist.id}`)")
+  .artists(:class="artists.length % 2 !== 0 ? 'odd' : ''")
+    artist-thumbnail(v-for="(artist, i) in artists" :key="artist.name" :artist="artist" @click.native="$router.push(`/artists/${artist.id}`)")
 </template>
 
 <script>
@@ -31,11 +31,15 @@ export default {
 .artists
   display grid
   grid-template-columns 1fr
-  grid-auto-rows 1fr
+  grid-auto-rows 512px
   background $colors-black
   height 100%
   width 100%
 
   @media $breakpoints-spec.lg-and-up
     grid-template-columns 1fr 1fr
+
+  &.odd
+    :last-child
+      grid-column: 1/-1;
 </style>
