@@ -20,8 +20,8 @@ export default [
     youtube: "",
   },
   {
-    id: "ragal",
-    name: "Ragal",
+    id: "marciomonteiro",
+    name: "Márcio Monteiro",
     photo: "",
     bio_pt: "",
     bio_en: "",

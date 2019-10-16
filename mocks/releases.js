@@ -6,7 +6,7 @@ export default [
     image: "https://i.vgy.me/5oHrYU.jpg",
     youtube: "https://youtu.be/-lYwuT2vVns",
     spotify: "https://open.spotify.com/track/5Ip1jmb8TgjYIdZKIaB3nu",
-    artists: ["voxivoid", "koopper", "fontourafx", "ragal"],
+    artists: ["voxivoid", "koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "I don't know what to do",
@@ -15,7 +15,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=NLzRGaEX2-8",
     spotify: "https://open.spotify.com/track/2o9dHFZ5ovEQldyEvptFUt",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Refugiado",
@@ -24,7 +24,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=omuBF6tMStY",
     spotify: "",
-    artists: ["fontourafx", "ragal"],
+    artists: ["fontourafx", "marciomonteiro"],
   },
   {
     title: "Doa a quem doer",
@@ -33,7 +33,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=Sh6piDa2TR4",
     spotify: "",
-    artists: ["fontourafx", "ragal"],
+    artists: ["fontourafx", "marciomonteiro"],
   },
   {
     title: "Queque foi - Boss AC (Remix)",
@@ -51,7 +51,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/EYZKjTyIyHI",
     spotify: "https://open.spotify.com/track/6JF1QBOWJfBvJ4wR0xBnmJ",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Faces of a Hero (EP)",
@@ -60,7 +60,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=_eqdcCAnw6o&list=PL3-BakGZzdQNoUSUreV8Emn5DXx2Mjw61",
     spotify: "https://open.spotify.com/album/6ehYl85exKez9j2glHQK8c",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Follow",
@@ -78,7 +78,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/rRqeSxn6OVg",
     spotify: "",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Silent Night",
@@ -87,7 +87,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=Zd1zJJs-utQ",
     spotify: "",
-    artists: ["khernei", "koopper", "fontourafx", "ragal"],
+    artists: ["khernei", "koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Tinder Girl",
@@ -96,7 +96,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/StF6TzuH27M",
     spotify: "https://open.spotify.com/track/11ns36QaCQb3Npdcq7M6vm",
-    artists: ["khernei", "koopper", "fontourafx", "ragal"],
+    artists: ["khernei", "koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Vira d'onde vens Maria",
@@ -105,7 +105,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/kWaNBBanPSc",
     spotify: "",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "T1.E1 Koopper's Lab",
@@ -114,7 +114,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=BHLriemBC9w",
     spotify: "",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "T1.E2 Koopper's Lab",
@@ -123,7 +123,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=K0_V90WgU-M",
     spotify: "",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Chula d'Aldeia",
@@ -132,7 +132,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/ileAX3aMy-8",
     spotify: "",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "T1.E3 Koopper's Lab",
@@ -141,7 +141,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=O1uJ8WeLFMU",
     spotify: "",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Bola Preta",
@@ -150,7 +150,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=JVftGOaBhAE",
     spotify: "https://open.spotify.com/track/7JkEkTT7eSMqjOKcpRNFcy",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "De Nada (Curta Metragem)",
@@ -168,7 +168,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=wp6IdN27_FM",
     spotify: "",
-    artists: ["voxivoid", "fontourafx", "ragal"],
+    artists: ["voxivoid", "fontourafx", "marciomonteiro"],
   },
   {
     title: "I don't know what to do (Lyric Breakdown)",
@@ -177,7 +177,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=yUXamYDga_8",
     spotify: "",
-    artists: ["fontourafx", "ragal"],
+    artists: ["fontourafx", "marciomonteiro"],
   },
   {
     title: "T1.E4 Koopper's Lab",
@@ -186,7 +186,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=uRqeaG3BTWM",
     spotify: "",
-    artists: ["koopper", "voxivoid", "fontourafx", "ragal"],
+    artists: ["koopper", "voxivoid", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Bola Preta (Lyric Breakdown)",
@@ -195,7 +195,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=f4S3v__IBhU",
     spotify: "",
-    artists: ["fontourafx", "ragal"],
+    artists: ["fontourafx", "marciomonteiro"],
   },
   {
     title: "Peculiar",
@@ -204,7 +204,7 @@ export default [
     image: "",
     youtube: "https://youtu.be/k2FMbsq9wzQ",
     spotify: "https://open.spotify.com/track/3Dxp0KBRlcn2mxgFjV8ofo",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "30 seconds of emotion",
@@ -240,7 +240,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=lAl9MpzbvsM",
     spotify: "https://open.spotify.com/track/4tdhrKmcS4Z2YhUSEZBC67",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Levels",
@@ -258,7 +258,7 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=Bjr5HADyMv0",
     spotify: "https://open.spotify.com/track/76Y5JwnxwyT5mAWfozs242",
-    artists: ["koopper", "fontourafx", "ragal"],
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Hoje N'Sta na Block",
@@ -276,7 +276,7 @@ export default [
     image: "",
     youtube: "",
     spotify: "https://open.spotify.com/track/4tXktenIVzKKRzYzYYLeZt",
-    artists: ["khernei", "koopper", "fontourafx", "ragal"],
+    artists: ["khernei", "koopper", "fontourafx", "marciomonteiro"],
   },
   {
     title: "Tarraxinha do Guetto",
