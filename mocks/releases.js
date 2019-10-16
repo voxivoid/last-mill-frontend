@@ -1,5 +1,4 @@
 export default [
-  // voxivoid
   {
     title: "Filho prodígio",
     subtitle: "voxivoid",
