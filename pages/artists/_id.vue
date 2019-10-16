@@ -31,8 +31,6 @@ export default {
 
     artist.releases = releases.filter(release => release.artists.includes(artist.id)).sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    console.log(artist.releases);
-
     return {
       artist,
     };

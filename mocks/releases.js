@@ -278,4 +278,13 @@ export default [
     spotify: "https://open.spotify.com/track/4tXktenIVzKKRzYzYYLeZt",
     artists: ["khernei", "koopper", "fontourafx", "ragal"],
   },
+  {
+    title: "Tarraxinha do Guetto",
+    subtitle: "Deejay F",
+    date: "2019-07-07",
+    image: "",
+    youtube: "https://youtu.be/y2wLymARjOU",
+    spotify: "https://open.spotify.com/track/1qyLk7EmhvSljlGOjr4Cwo",
+    artists: ["fontourafx"],
+  },
 ];
