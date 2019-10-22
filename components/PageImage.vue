@@ -40,5 +40,5 @@ export default {
   font-weight bold
 
   @media $breakpoints-spec.lg-and-up
-    font-size 64px
+    font-size 48px
 </style>

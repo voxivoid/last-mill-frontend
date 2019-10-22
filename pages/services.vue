@@ -64,9 +64,6 @@ h2
   @media $breakpoints-spec.md-and-up
     grid-template-columns repeat(2, 1fr)
 
-  @media $breakpoints-spec.lg-and-up
-    grid-template-columns repeat(4, 1fr)
-
 .service
   text-align center
 </style>

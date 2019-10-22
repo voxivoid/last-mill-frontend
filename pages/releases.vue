@@ -46,6 +46,9 @@ h1
   grid-gap 32px
   grid-template-columns 1fr
 
+  @media $breakpoints-spec.md-and-up
+    grid-template-columns repeat(2, 1fr)
+
   @media $breakpoints-spec.lg-and-up
-    grid-template-columns 1fr 1fr 1fr 1fr
+    grid-template-columns repeat(3, 1fr)
 </style>
