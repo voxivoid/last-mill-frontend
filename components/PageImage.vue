@@ -1,13 +1,17 @@
 <template lang="pug">
-.artist-image(:style="{backgroundImage: `url(${artist.photo})`}")
-  .name {{ artist.name }}
+.page-image(:style="{backgroundImage: `url(${imgSrc})`}")
+  .title {{ title }}
 </template>
 
 <script>
 export default {
   props: {
-    artist: {
-      type: Object,
+    imgSrc: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
       required: true,
     },
   },
@@ -18,7 +22,7 @@ export default {
 @import '~assets/breakpoints'
 @import '~assets/colors'
 
-.artist-image
+.page-image
   display grid
   place-items end start
   padding 16px 32px
@@ -30,7 +34,7 @@ export default {
   @media $breakpoints-spec.lg-and-up
     place-items end end
 
-.name
+.title
   font-size 32px
   color $colors-white
   font-weight bold

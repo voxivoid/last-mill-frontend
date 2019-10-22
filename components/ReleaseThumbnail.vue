@@ -11,26 +11,17 @@
 </template>
 
 <script>
+import SocialNetworks from "@/mixins/helpers.socialNetworks";
+
 export default {
+  mixins: [
+    SocialNetworks,
+  ],
   props: {
     release: {
       type: Object,
       required: true,
     },
-  },
-  data() {
-    return {
-      socialNetworks: [
-        {
-          id: "youtube",
-          icon: "fa-youtube",
-        },
-        {
-          id: "spotify",
-          icon: "fa-spotify",
-        },
-      ],
-    };
   },
 };
 </script>

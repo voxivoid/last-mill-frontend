@@ -19,6 +19,7 @@
 
 <script>
 import LocaleHelpers from "@/mixins/helpers.locale";
+import SocialNetworks from "@/mixins/helpers.socialNetworks";
 
 import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
 
@@ -26,34 +27,15 @@ export default {
   components: {
     ReleaseThumbnail,
   },
-  mixins: [LocaleHelpers],
+  mixins: [
+    LocaleHelpers,
+    SocialNetworks,
+  ],
   props: {
     artist: {
       type: Object,
       required: true,
     },
-  },
-  data() {
-    return {
-      socialNetworks: [
-        {
-          id: "instagram",
-          icon: "fab fa-instagram",
-        },
-        {
-          id: "youtube",
-          icon: "fab fa-youtube",
-        },
-        {
-          id: "spotify",
-          icon: "fab fa-spotify",
-        },
-        {
-          id: "website",
-          icon: "fas fa-link",
-        },
-      ],
-    };
   },
   i18n: {
     messages: {
@@ -87,10 +69,6 @@ p
   display grid
   grid-gap 64px
   overflow auto
-  padding 32px
-
-  @media $breakpoints-spec.lg-and-up
-    padding 64px
 
 .releases
   display grid
