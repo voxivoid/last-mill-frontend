@@ -9,15 +9,6 @@ export default [
     artists: ["voxivoid", "koopper", "fontourafx", "marciomonteiro"],
   },
   {
-    title: "I don't know what to do",
-    subtitle: "Bruna Curva",
-    date: "2018-03-07",
-    image: "",
-    youtube: "https://www.youtube.com/watch?v=NLzRGaEX2-8",
-    spotify: "https://open.spotify.com/track/2o9dHFZ5ovEQldyEvptFUt",
-    artists: ["koopper", "fontourafx", "marciomonteiro"],
-  },
-  {
     title: "Refugiado",
     subtitle: "A Caixa",
     date: "2018-03-18",
@@ -141,15 +132,6 @@ export default [
     image: "",
     youtube: "https://www.youtube.com/watch?v=O1uJ8WeLFMU",
     spotify: "",
-    artists: ["koopper", "fontourafx", "marciomonteiro"],
-  },
-  {
-    title: "Bola Preta",
-    subtitle: "TMC",
-    date: "2019-03-23",
-    image: "",
-    youtube: "https://www.youtube.com/watch?v=JVftGOaBhAE",
-    spotify: "https://open.spotify.com/track/7JkEkTT7eSMqjOKcpRNFcy",
     artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
   {
