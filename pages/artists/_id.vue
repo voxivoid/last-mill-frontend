@@ -1,5 +1,5 @@
 <template lang="pug">
-page-with-image(:title="artist.name" :imgSrc="artist.image")
+page-with-image(:title="artist.name" :imgSrc="artist.photo")
   artist-info(:artist="artist")
 </template>
 
