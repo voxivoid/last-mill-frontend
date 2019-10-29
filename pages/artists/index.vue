@@ -32,12 +32,16 @@ export default {
 .artists
   display grid
   grid-template-columns 1fr
-  grid-auto-rows 512px
+  grid-auto-rows 256px
   background $colors-black
   height 100%
   width 100%
 
+  @media $breakpoints-spec.md-and-up
+    grid-auto-rows 384px
+
   @media $breakpoints-spec.lg-and-up
+    grid-auto-rows 512px
     grid-template-columns 1fr 1fr
 
   &.odd
