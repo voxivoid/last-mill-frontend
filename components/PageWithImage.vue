@@ -46,16 +46,28 @@ export default {
   background $colors-black
   display grid
 
-  @media $breakpoints-spec.md-and-down
-    grid-template-rows 200px 1fr
+  grid-template-rows 200px 1fr
+
+  .image
+    position sticky
+    top -128px
+    border-bottom 1px solid $colors-white
+
+  @media $breakpoints-spec.md-and-up
+    grid-template-rows 384px 1fr
 
     .image
       position sticky
-      top -128px
+      top -312px
       border-bottom 1px solid $colors-white
 
   @media $breakpoints-spec.lg-and-up
+    grid-template-rows none
     grid-template-columns 1fr 2fr
+
+    .image
+      position static
+      border none
 
 .content
   padding 32px
