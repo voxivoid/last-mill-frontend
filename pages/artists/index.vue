@@ -1,6 +1,6 @@
 <template lang="pug">
 simplebar
-  .artists(:class="artists.length % 2 !== 0 ? 'odd' : ''")
+  .artists
     nuxt-link(v-for="(artist, i) in artists" :key="artist.name" :to="localePath({ name: 'artists-id', params: { id: artist.id }})")
       artist-thumbnail(:artist="artist")
 </template>
@@ -43,8 +43,4 @@ export default {
   @media $breakpoints-spec.lg-and-up
     grid-auto-rows 512px
     grid-template-columns 1fr 1fr
-
-  &.odd
-    :last-child
-      grid-column: 1/-1;
 </style>

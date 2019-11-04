@@ -41,7 +41,7 @@ export default [
   {
     id: "khernei",
     name: "Khernei",
-    photo: "https://scontent.flis5-1.fna.fbcdn.net/v/t31.0-8/22219587_353489528411308_68284143477296765_o.jpg?_nc_cat=111&_nc_ht=scontent.flis5-1.fna&oh=19932bd106a364f26c7fd4f4f4f56161&oe=5D8D037A",
+    photo: "/artists/khernei.jpg",
     bio_pt: "Uma pérola africana em Portugal, este nigeriano procura transformar-se num artista de originais, depois de rotulado como um cover artist. Em 2020, foi convidado para ser uma das caras da recentemente lançada LAST MILL, LABEL.",
     bio_en: "An African pearl in Portugal, this Nigerian seeks to become an original artist after being labeled a cover artist. In 2020, he was invited to be one of the faces of the recently released LAST MILL, LABEL.",
     instagram: "https://www.instagram.com/khernei_/",
