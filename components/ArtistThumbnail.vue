@@ -91,7 +91,7 @@ $animation-duration = 0.3s
     transition opacity $animation-duration
 
 img
-  object-fit cover
+  object-fit contain
   width 100%
   height 100%
   transition transform $animation-duration
