@@ -51,7 +51,6 @@ export default {
   .image
     position sticky
     top -128px
-    border-bottom 1px solid $colors-white
 
   @media $breakpoints-spec.md-and-up
     grid-template-rows 384px 1fr
@@ -59,15 +58,14 @@ export default {
     .image
       position sticky
       top -312px
-      border-bottom 1px solid $colors-white
 
   @media $breakpoints-spec.lg-and-up
     grid-template-rows none
     grid-template-columns 1fr 2fr
 
     .image
-      position static
-      border none
+      top 0
+      position relative
 
 .content
   padding 32px
