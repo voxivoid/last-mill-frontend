@@ -2,8 +2,7 @@
 .home
   logo-horizontal.logo
   .overlay
-  video(width="100%" autoplay loop muted)
-    source(src="/videos/home_720p.mp4" type="video/mp4")
+  video(width="100%" autoplay loop muted src="/videos/home_720p.mp4")
 </template>
 
 <script>
