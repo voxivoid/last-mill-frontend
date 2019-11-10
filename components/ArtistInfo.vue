@@ -5,16 +5,16 @@
     p {{ artist[`bio_${locale}`] }}
 
   section
-    h1 {{ $t("releases") }}
-    .releases
-      release-thumbnail(v-for="release in artist.releases" :key="release.title" :release="release")
-
-  section
     h1 {{ $t("socialNetworks") }}
     .social-networks
       template(v-for="socialNetwork in socialNetworks")
         a(v-if="artist[socialNetwork.id]" :key="socialNetwork.id" :href="artist[socialNetwork.id]" target="_blank" rel="noopener noreferrer")
           i(:class="socialNetwork.icon")
+
+  section
+    h1 {{ $t("releases") }}
+    .releases
+      release-thumbnail(v-for="release in artist.releases" :key="release.title" :release="release")
 </template>
 
 <script>

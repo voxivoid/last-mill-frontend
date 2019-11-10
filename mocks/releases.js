@@ -39,7 +39,7 @@ export default [
     title: "Afrodim",
     subtitle: "Koopper",
     date: "2018-10-07",
-    image: "/releases/queque_foi_(remix).jpg",
+    image: "/releases/afrodim.jpg",
     youtube: "https://youtu.be/EYZKjTyIyHI",
     spotify: "https://open.spotify.com/track/6JF1QBOWJfBvJ4wR0xBnmJ",
     artists: ["koopper", "fontourafx", "marciomonteiro"],
