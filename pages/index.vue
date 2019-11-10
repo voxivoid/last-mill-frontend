@@ -18,6 +18,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/colors'
+@import '~assets/breakpoints'
 
 .home
   position relative
@@ -36,7 +37,10 @@ export default {
   left 0
   right 0
   z-index 1
-  background linear-gradient(90deg, rgba(0,0,0,0) 0%, $colors-black 100%);
+  background linear-gradient(0deg, rgba(0,0,0,0) 0%, $colors-black 100%);
+
+  @media $breakpoints-spec.lg-and-up
+    background linear-gradient(90deg, rgba(0,0,0,0) 0%, $colors-black 100%);
 
 .logo
   max-width 512px
@@ -48,4 +52,6 @@ video
   bottom 0
   left 0
   right 0
+  height 100vh
+  object-fit cover
 </style>
