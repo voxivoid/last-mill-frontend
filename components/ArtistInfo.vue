@@ -92,5 +92,5 @@ p
 
   i
     color $colors-white
-    font-size 32px
+    font-size 24px
 </style>
