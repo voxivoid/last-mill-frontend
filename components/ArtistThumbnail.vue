@@ -1,7 +1,7 @@
 <template lang="pug">
 .artist-thumbnail
   .overlay
-  .name {{ artist.name }}
+  h2.name {{ artist.name }}
   img(:src="artist.photo")
 </template>
 
@@ -72,17 +72,15 @@ $animation-duration = 0.3s
 
 .name
   padding 8px 16px
-  font-size 26px
-  font-weight bold
   position absolute
   bottom 0
   left 0
   color $colors-white
   z-index 1
+  margin 0
 
   @media $breakpoints-spec.md-and-up
     padding 16px 32px
-    font-size 32px
 
   @media $breakpoints-spec.lg-and-up
     background transparent

@@ -54,19 +54,7 @@ export default {
 @import '~assets/breakpoints'
 @import '~assets/colors'
 
-.contacts
-  color $colors-white
-  background $colors-black
-  padding 32px
-
-  @media $breakpoints-spec.lg-and-up
-    padding 64px
-
 .contacts-details
   display grid
-  grid-template-columns 1fr
-  text-align center
-
-  @media $breakpoints-spec.md-and-up
-    grid-template-columns repeat(3, 1fr)
+  grid-gap 32px
 </style>

@@ -1,6 +1,6 @@
 <template lang="pug">
 .page-image(:style="{backgroundImage: `url(${imgSrc})`}")
-  .title {{ title }}
+  h1.title {{ title }}
   .gradient
 </template>
 
@@ -41,6 +41,7 @@ export default {
   color $colors-white
   font-weight bold
   z-index 1
+  margin 0
 
   @media $breakpoints-spec.lg-and-up
     font-size 48px
