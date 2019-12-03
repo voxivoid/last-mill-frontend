@@ -63,6 +63,7 @@ export default {
   grid-auto-flow column
   grid-auto-columns max-content
   grid-gap 32px
+  overflow-x auto
 
 .logo
   height 100%
