@@ -1,0 +1,54 @@
+<template lang="pug">
+page-with-image(:title="$t('entertainment')" :imgSrc="'TODO:'")
+  .releases
+    release-thumbnail(v-for="release in releases" :key="release.title" :release="release")
+</template>
+
+<script>
+import PageWithImage from "@/components/PageWithImage.vue";
+import ReleaseThumbnail from "@/components/ReleaseThumbnail.vue";
+
+import releases from "@/mocks/entertainment";
+
+export default {
+  components: {
+    PageWithImage,
+    ReleaseThumbnail,
+  },
+  data() {
+    return {
+      releases: releases.sort((a, b) => new Date(b.date) - new Date(a.date)),
+    };
+  },
+  i18n: {
+    messages: {
+      en: {
+        entertainment: "Entertainment",
+      },
+      pt: {
+        entertainment: "Entretenimento",
+      },
+    },
+  },
+};
+</script>
+
+<style lang="stylus" scoped>
+@import '~assets/breakpoints'
+@import '~assets/colors'
+
+h1
+  font-weight bold
+  margin-bottom 16px
+
+.releases
+  display grid
+  grid-gap 32px
+  grid-template-columns 1fr
+
+  @media $breakpoints-spec.md-and-up
+    grid-template-columns repeat(2, 1fr)
+
+  @media $breakpoints-spec.lg-and-up
+    grid-template-columns repeat(3, 1fr)
+</style>

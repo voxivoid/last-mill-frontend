@@ -15,6 +15,10 @@ export default {
           to: "releases",
         },
         {
+          name: this.$t("entertainment"),
+          to: "entertainment",
+        },
+        {
           name: this.$t("services"),
           to: "services",
         },
@@ -31,6 +35,7 @@ export default {
         aboutUs: "About us",
         artists: "Artists",
         releases: "Releases",
+        entertainment: "Entertainment",
         services: "Services",
         contacts: "Contacts",
       },
@@ -38,6 +43,7 @@ export default {
         aboutUs: "Sobre nós",
         artists: "Artistas",
         releases: "Portfólio",
+        entertainment: "Entretenimento",
         services: "Serviços",
         contacts: "Contactos",
       },
