@@ -1,9 +1,9 @@
 <template lang="pug">
 .layout
   cloak
-  nuxt.page-scroll
   menu-mobile(v-if="$sizes.md_and_down")
   menu-desktop.menu-desktop(v-else)
+  nuxt.page-scroll
 </template>
 
 <script>
@@ -97,8 +97,7 @@ a
 
   @media $breakpoints-spec.lg-and-up
     display grid
-    grid-template-columns 1fr
-    grid-template-columns 1fr $menu-height
+    grid-template-rows auto 1fr
 
 .menu-desktop
   height $menu-height
@@ -110,6 +109,11 @@ a
   max-height 100vh
   overflow-y auto
 
+  @media $breakpoints-spec.md-and-up
+    min-height initial
+    height 100%
+
+
 .simplebar-track
   .simplebar-scrollbar
     &:before
@@ -119,7 +123,4 @@ a
     &.simplebar-visible
       &:before
         opacity 1
-
-.simplebar-content > *
-  min-height 100vh
 </style>

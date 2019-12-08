@@ -34,13 +34,9 @@ export default {
   grid-template-columns auto 1fr
   grid-gap 32px
   padding 16px 32px
-  position absolute
-  top 0
-  left 100%
-  transform-origin 0 0
-  transform rotate(90deg)
   white-space nowrap
   background $colors-black
+  width 100%
 
   .link
     display grid
@@ -67,7 +63,6 @@ export default {
 
 .logo
   height 100%
-  transform rotate(-90deg)
 
   svg
     object-fit contain
