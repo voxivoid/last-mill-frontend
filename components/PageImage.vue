@@ -52,8 +52,8 @@ export default {
   bottom 0
   left 0
   right 0
-  background linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, $colors-black 100%)
+  background linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, $colors-black 100%)
 
   @media $breakpoints-spec.lg-and-up
-    background linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, $colors-black 100%)
+    background linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, $colors-black 100%)
 </style>

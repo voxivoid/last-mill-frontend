@@ -84,7 +84,7 @@ p
 .social-networks
   display grid
   grid-auto-flow column
-  grid-gap 32px
+  grid-gap 16px
   width max-content
 
   a
