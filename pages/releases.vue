@@ -1,5 +1,5 @@
 <template lang="pug">
-page-with-image(:title="$t('releases')" :imgSrc="'TODO:'")
+page-with-image(:title="$t('releases')" imgSrc="/pages/releases.jpg")
   .releases
     release-thumbnail(v-for="release in releases" :key="release.title" :release="release")
 </template>

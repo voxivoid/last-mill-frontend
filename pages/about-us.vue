@@ -1,5 +1,5 @@
 <template lang="pug">
-page-with-image(:title="$t('aboutUs')" :imgSrc="'TODO:'")
+page-with-image(:title="$t('aboutUs')" imgSrc="/pages/about_us.jpg")
   p {{ aboutUs[locale] }}
 </template>
 

@@ -1,5 +1,5 @@
 <template lang="pug">
-page-with-image(:title="$t('contacts')" :imgSrc="'TODO:'")
+page-with-image(:title="$t('contacts')" imgSrc="/pages/contacts.jpg")
   .contacts-details
     div
       h2 {{ $t("email") }}

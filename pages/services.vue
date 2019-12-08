@@ -1,5 +1,5 @@
 <template lang="pug">
-page-with-image(:title="$t('services')" :imgSrc="'TODO:'")
+page-with-image(:title="$t('services')" imgSrc="/pages/services.jpg")
   .services
     .service-type(v-for="serviceType in Object.keys(services)")
       h2(:key="serviceType") {{ $t(serviceType) }}
