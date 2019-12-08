@@ -62,6 +62,7 @@ export default {
   @media $breakpoints-spec.lg-and-up
     grid-template-rows none
     grid-template-columns 1fr 2fr
+    grid-gap 64px
 
     .image
       top 0
