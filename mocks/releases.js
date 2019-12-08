@@ -132,7 +132,7 @@ export default [
     image: "/releases/koopper_s_lab_t1_e3.jpg",
     youtube: "https://www.youtube.com/watch?v=O1uJ8WeLFMU",
     spotify: "",
-    artists: ["koopper", "fontourafx", "marciomonteiro"],
+    artists: ["koopper", "fontourafx", "marciomonteiro", "khernei"],
   },
   {
     title: "De Nada (Curta Metragem)",
