@@ -18,6 +18,10 @@ export default {
           id: "website",
           icon: "fas fa-link",
         },
+        {
+          id: "facebook",
+          icon: "fab fa-facebook",
+        },
       ],
     };
   },

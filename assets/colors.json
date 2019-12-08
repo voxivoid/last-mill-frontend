@@ -2,6 +2,7 @@
   "$colors": {
     "black": "#010101",
     "white": "#ffffff",
-    "grey": "grey"
+    "grey": "grey",
+    "blue": "#2e75fd"
   }
 }

@@ -87,6 +87,7 @@ h3
     font-size 24px
 
 a
+  color $colors-blue
   text-decoration none
 
 .layout
