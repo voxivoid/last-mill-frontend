@@ -14,7 +14,9 @@ export default {
       { hid: "description", name: "description", content: "Last Mill website" },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/png", href: "/favicon_16.png", sizes: "16x16" },
+      { rel: "icon", type: "image/png", href: "/favicon_32.png", sizes: "32x32" },
+      { rel: "icon", type: "image/png", href: "/favicon_48.png", sizes: "48x48" },
       { href: "https://fonts.googleapis.com/css?family=Maven+Pro", rel: "stylesheet" },
       { href: "https://use.fontawesome.com/releases/v5.9.0/css/all.css", rel: "stylesheet" },
     ],
