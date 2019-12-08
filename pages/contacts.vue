@@ -75,7 +75,7 @@ export default {
   display grid
   grid-auto-flow column
   grid-gap 16px
-  grid-template-columns max-content
+  grid-auto-columns max-content
 
   a
     text-decoration none
