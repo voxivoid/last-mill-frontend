@@ -13,7 +13,7 @@ export default {
       name_pt: "Produção",
       name_en: "Production",
       image: "",
-      description_pt: "Uma junção de tudo e nada, é onde podemos falhar e temos as tentativas necessárias para que a música seja a desejada.É nesta fase que damos algo mais de nós, porque nela vivem emoções e histórias, e o nosso trabalho é ajudar-vos a concretizá-la.",
+      description_pt: "Uma junção de tudo e nada, é onde podemos falhar e temos as tentativas necessárias para que a música seja a desejada. É nesta fase que damos algo mais de nós, porque nela vivem emoções e histórias, e o nosso trabalho é ajudar-vos a concretizá-la.",
       description_en: "A junction of everything and nothing, is where we can fail and have the necessary attempts to make the music that you desire. This is where we give something more of ourselves, because emotions and stories live in it and our job is to realize it.",
     },
     {

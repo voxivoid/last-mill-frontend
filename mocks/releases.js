@@ -236,7 +236,7 @@ export default [
   {
     title: "Only You",
     subtitle: "Khernei",
-    date: "2019-11-30",
+    date: "2018-11-30",
     image: "/releases/only_you.jpg",
     youtube: "",
     spotify: "https://open.spotify.com/track/4tXktenIVzKKRzYzYYLeZt",
@@ -251,4 +251,14 @@ export default [
     spotify: "https://open.spotify.com/track/1qyLk7EmhvSljlGOjr4Cwo",
     artists: ["fontourafx"],
   },
+  {
+    title: "Coração",
+    subtitle: "Maddo",
+    date: "2019-11-16",
+    image: "/releases/coracao.jpg",
+    youtube: "https://youtu.be/dtlyspsxj5u",
+    spotify: "https://open.spotify.com/track/6MdduIqCcBLTX59tFh9Q9C",
+    artists: ["koopper", "fontourafx", "marciomonteiro"],
+  },
+
 ];
