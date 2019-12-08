@@ -57,8 +57,7 @@ export default {
   @media $breakpoints-spec.md-and-up
     display grid
     grid-template-columns auto 1fr
-    grid-gap 256px
-
+    grid-gap 128px
 
 .service-type-group
   display grid

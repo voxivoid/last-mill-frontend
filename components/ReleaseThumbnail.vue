@@ -1,6 +1,6 @@
 <template lang="pug">
-.release-thumbnail
-  img(:src="release.image")
+.release-thumbnail(v-lazy-container="{selector: 'img'}")
+  img(:data-src="release.image")
   div
     .title {{ release.title }}
     .subtitle {{ release.subtitle }}
