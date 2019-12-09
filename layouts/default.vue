@@ -123,4 +123,8 @@ a
     &.simplebar-visible
       &:before
         opacity 1
+
+@media $breakpoints-spec.md-and-down
+  .simplebar-content > *
+    min-height 100vh
 </style>
