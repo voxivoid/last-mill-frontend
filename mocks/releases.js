@@ -256,7 +256,7 @@ export default [
     subtitle: "Maddo",
     date: "2019-11-16",
     image: "/releases/coracao.jpg",
-    youtube: "https://youtu.be/dtlyspsxj5u",
+    youtube: "https://www.youtube.com/watch?v=dtlysPSxJ5U",
     spotify: "https://open.spotify.com/track/6MdduIqCcBLTX59tFh9Q9C",
     artists: ["koopper", "fontourafx", "marciomonteiro"],
   },
