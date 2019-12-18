@@ -44,8 +44,8 @@ export default {
 .page
   color $colors-white
   background $colors-black
+  height 100%
   display grid
-
   grid-template-rows 200px 1fr
 
   .image
@@ -53,7 +53,6 @@ export default {
     top -128px
 
   @media $breakpoints-spec.md-and-up
-    height 100%
     grid-template-rows 384px 1fr
 
     .image
