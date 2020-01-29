@@ -44,7 +44,7 @@ export default {
   },
   i18n: {
     messages: {
-      en: {
+      us: {
         contacts: "Contacts",
         email: "Email",
         phones: "Phones",

@@ -4,11 +4,13 @@
   .overlay(:class="{'is-open': isOpen}")
     nuxt-link.logo(:to="localePath('index')" @click.native="isOpen = !isOpen")
       windmill(fill="white")
+    locale-selector.locale-selector
     nuxt-link.link(v-for="page in pages" :key="page.to" :to="localePath(page.to)" @click.native="isOpen = !isOpen")
       span.base {{ page.name }}
 </template>
 
 <script>
+import LocaleSelector from "@/components/LocaleSelector.vue";
 import MenuToggle from "@/components/MenuToggle.vue";
 import Windmill from "@/components/svgs/Windmill.vue";
 
@@ -16,6 +18,7 @@ import MenuHelpers from "@/mixins/helpers.menu";
 
 export default {
   components: {
+    LocaleSelector,
     MenuToggle,
     Windmill,
   },
@@ -81,7 +84,12 @@ $menu-toggle-height = 32px
   display flex
   align-content center
   justify-content center
-  margin-bottom 16px
+
   svg
     height 100%
+
+.locale-selector
+  display grid
+  align-content center
+  justify-content center
 </style>

@@ -29,7 +29,7 @@ export default {
 
   i18n: {
     messages: {
-      en: {
+      us: {
         services: "Services",
         audio: "Audio",
         video: "Video",

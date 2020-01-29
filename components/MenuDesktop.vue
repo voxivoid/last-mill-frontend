@@ -8,15 +8,19 @@
       span.placeholder {{ page.name }}
       span.base {{ page.name }}
       span.hover {{ page.name }}
+
+  locale-selector
 </template>
 
 <script>
 import Windmill from "@/components/svgs/Windmill.vue";
+import LocaleSelector from "@/components/LocaleSelector.vue";
 
 import MenuHelpers from "@/mixins/helpers.menu";
 
 export default {
   components: {
+    LocaleSelector,
     Windmill,
   },
   mixins: [MenuHelpers],

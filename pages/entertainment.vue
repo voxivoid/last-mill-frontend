@@ -22,7 +22,7 @@ export default {
   },
   i18n: {
     messages: {
-      en: {
+      us: {
         entertainment: "Entertainment",
       },
       pt: {

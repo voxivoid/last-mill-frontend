@@ -238,7 +238,7 @@ export default [
     subtitle: "Khernei",
     date: "2018-11-30",
     image: "/releases/only_you.jpg",
-    youtube: "",
+    youtube: "https://www.youtube.com/watch?v=0nR5WF7BW30",
     spotify: "https://open.spotify.com/track/4tXktenIVzKKRzYzYYLeZt",
     artists: ["khernei", "koopper", "fontourafx", "marciomonteiro"],
   },

@@ -1,7 +1,7 @@
 export default {
-  data() {
-    return {
-      pages: [
+  computed: {
+    pages() {
+      return [
         {
           name: this.$t("aboutUs"),
           to: "about-us",
@@ -26,12 +26,12 @@ export default {
           name: this.$t("contacts"),
           to: "contacts",
         },
-      ],
-    };
+      ];
+    },
   },
   i18n: {
     messages: {
-      en: {
+      us: {
         aboutUs: "About us",
         artists: "Artists",
         releases: "Releases",

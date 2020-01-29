@@ -39,7 +39,7 @@ export default {
   },
   i18n: {
     messages: {
-      en: {
+      us: {
         biography: "Biography",
         releases: "Releases",
         socialNetworks: "Social networks",
