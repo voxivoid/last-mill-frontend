@@ -12,6 +12,7 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "Last Mill website" },
+      { name: "keywords", content: "Last Mill, Produção Audiovisual, Produção de Vídeo, BEcoming, Videoclipes, Estúdio de Vídeo, Fontoura FX, Márcio Oliveira Monteiro, Visual Mind Films" },
     ],
     link: [
       { rel: "icon", type: "image/png", href: "/favicon_16.png", sizes: "16x16" },
