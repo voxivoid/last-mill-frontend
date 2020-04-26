@@ -1,12 +1,19 @@
 <template lang="pug">
 .artist-thumbnail
   .overlay
-  h2.name {{ artist.name }}
+  .name
+    h2 {{ artist.name }}
+    p {{ artist[`role_${locale}`] }}
   img(:src="artist.photo")
 </template>
 
 <script>
+import LocaleHelpers from "@/mixins/helpers.locale";
+
 export default {
+  mixins: [
+    LocaleHelpers,
+  ],
   props: {
     artist: {
       type: Object,
@@ -69,6 +76,13 @@ $animation-duration = 0.3s
       & ~ img
         filter blur(10px)
         transform scale(1.2)
+
+p
+  font-size 16px
+  margin 0
+
+h2
+  margin 0
 
 .name
   padding 8px 16px

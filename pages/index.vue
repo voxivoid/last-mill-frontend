@@ -1,6 +1,8 @@
 <template lang="pug">
 .home
-  logo-horizontal.logo
+  div.on-top
+    logo-horizontal.logo
+    h2 {{ $t("slogan") }}
   .overlay
   video(width="100%" muted autoplay loop playsinline src="/videos/home_720p.mp4")
 </template>
@@ -11,6 +13,16 @@ import LogoHorizontal from "@/components/svgs/LogoHorizontal.vue";
 export default {
   components: {
     LogoHorizontal,
+  },
+  i18n: {
+    messages: {
+      us: {
+        slogan: "The path between dream and reality",
+      },
+      pt: {
+        slogan: "O caminho entre o sonho e a realidade",
+      },
+    },
   },
 };
 </script>
@@ -40,7 +52,19 @@ export default {
 
 .logo
   max-width 512px
+
+.on-top
   z-index 2
+
+h2
+  color white
+  text-align center
+  font-weight lighter
+  font-size 16px
+
+  @media $breakpoints-spec.md-and-up
+    font-size 24px
+
 
 video
   position absolute

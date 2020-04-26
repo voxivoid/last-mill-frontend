@@ -22,6 +22,10 @@ export default {
           id: "facebook",
           icon: "fab fa-facebook",
         },
+        {
+          id: "linkedin",
+          icon: "fab fa-linkedin-in",
+        },
       ],
     };
   },

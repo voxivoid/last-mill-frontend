@@ -11,10 +11,6 @@ page-with-image(:title="$t('contacts')" imgSrc="/pages/contacts.jpg")
         a(:href="`tel:${phone}`" rel="noopener noreferrer") {{ phone }}
 
     div
-      h2 {{ $t("address") }}
-      a(:href="contacts.addressUrl" target="_blank" rel="noopener noreferrer") {{ contacts.address }}
-
-    div
       h2 {{ $t("socialNetworks") }}
       .social-networks
         template(v-for="socialNetwork in socialNetworks")
