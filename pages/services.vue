@@ -50,7 +50,6 @@ export default {
 
 .services
   display grid
-  grid-template-rows repeat(2, 1fr)
   grid-gap 32px
 
 .service-type
