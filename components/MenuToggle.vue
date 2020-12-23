@@ -17,7 +17,7 @@ export default {
 <style lang="stylus" scoped>
 @import '~assets/colors'
 
-$hamburger-color = $colors-white
+$hamburger-color = $colors-black
 $cross-color = $colors-white
 
 .menu-toggle

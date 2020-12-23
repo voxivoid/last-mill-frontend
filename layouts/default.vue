@@ -1,9 +1,8 @@
 <template lang="pug">
 .layout
   cloak
-  menu-mobile(v-if="$sizes.md_and_down")
-  menu-desktop.menu-desktop(v-else)
-  nuxt.page-scroll
+  menu-mobile
+  nuxt
 </template>
 
 <script>
@@ -51,8 +50,8 @@ export default {
 $menu-height = 65px
 
 html
-  font-family 'Maven Pro', sans-serif
-  font-size 16px
+  font-family 'Open sans', sans-serif
+  font-size 14px
   word-spacing 1px
   -ms-text-size-adjust 100%
   -webkit-text-size-adjust 100%
@@ -68,27 +67,27 @@ body
 *:after
   box-sizing border-box
 
+h1, h2, h3, h4, h5, h6, .heading
+  font-family 'Oswald', sans-serif
+  text-transform uppercase
+  letter-spacing 4px
+
 h1
-  font-size 32px
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 48px
-
-h2
   font-size 24px
 
-  @media $breakpoints-spec.lg-and-up
-    font-size 32px
-
-h3
+h2
   font-size 18px
 
-  @media $breakpoints-spec.lg-and-up
-    font-size 24px
+h3
+  font-size 16px
 
 a
   color $colors-blue
   text-decoration none
+
+.section-container
+  max-width 1024px
+  padding 32px
 
 .layout
   min-height 100vh

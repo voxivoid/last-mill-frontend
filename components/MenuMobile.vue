@@ -4,9 +4,11 @@
   .overlay(:class="{'is-open': isOpen}")
     nuxt-link.logo(:to="localePath('index')" @click.native="isOpen = !isOpen")
       windmill(fill="white")
-    locale-selector.locale-selector
-    nuxt-link.link(v-for="page in pages" :key="page.to" :to="localePath(page.to)" @click.native="isOpen = !isOpen")
+
+    nuxt-link.link.heading(v-for="page in pages" :key="page.to" :to="localePath(page.to)" @click.native="isOpen = !isOpen")
       span.base {{ page.name }}
+
+    locale-selector.locale-selector
 </template>
 
 <script>
@@ -51,7 +53,7 @@ $menu-toggle-height = 32px
 .overlay
   display grid
   grid-auto-rows 64px
-  padding $menu-toggle-padding + 32px 0
+  padding $menu-toggle-padding + 32px 32px
   position fixed
   top 0
   bottom 0
@@ -62,9 +64,6 @@ $menu-toggle-height = 32px
   opacity 0
   transition all 0.3s
 
-  & > .link
-    border-bottom 1px dashed $colors-grey
-
   &.is-open
     left 0
     z-index 998
@@ -72,24 +71,25 @@ $menu-toggle-height = 32px
     box-shadow 0 14px 28px rgba($colors-black, 0.25), 0 10px 10px rgba($colors-black ,0.22)
 
     @media $breakpoints-spec.sm-and-up
-      left 50vw
+      left calc(100vw - 500px)
 
 .link
   display grid
   align-content center
-  padding 0 32px
   color $colors-white
+  transition color 0.2s
+
+  &:hover
+    color $colors-grey
 
 .logo
-  display flex
-  align-content center
-  justify-content center
+  align-self start
+  width 50px
 
   svg
     height 100%
 
 .locale-selector
-  display grid
-  align-content center
-  justify-content center
+  align-self center
+  justify-self center
 </style>
