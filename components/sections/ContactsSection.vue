@@ -1,6 +1,6 @@
 <template lang="pug">
 section.contacts
-  .section-container
+  .section-container.max-width
     h2 {{ $t("contacts") }}
 
     .contacts-container
@@ -35,7 +35,6 @@ import PageWithImage from "@/components/PageWithImage.vue";
 import SocialNetworks from "@/mixins/helpers.socialNetworks";
 
 import contacts from "@/mocks/contacts";
-
 
 export default {
   components: {

@@ -68,7 +68,7 @@ body
   box-sizing border-box
 
 h1, h2, h3, h4, h5, h6, .heading
-  font-family 'Oswald', sans-serif
+  font-family 'Karla', sans-serif
   text-transform uppercase
   letter-spacing 4px
 
@@ -86,8 +86,10 @@ a
   text-decoration none
 
 .section-container
-  max-width 1024px
-  padding 32px
+  padding 0 32px
+
+  &.max-width
+    max-width 1024px
 
 .layout
   min-height 100vh

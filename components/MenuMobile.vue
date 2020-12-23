@@ -38,7 +38,6 @@ export default {
 @import '~assets/colors'
 
 $menu-toggle-padding = 16px
-$menu-toggle-height = 32px
 
 .menu-mobile
   font-weight bold
@@ -51,8 +50,9 @@ $menu-toggle-height = 32px
   z-index 999
 
 .overlay
-  display grid
-  grid-auto-rows 64px
+  display flex
+  flex-direction column
+  gap 16px
   padding $menu-toggle-padding + 32px 32px
   position fixed
   top 0
@@ -78,6 +78,7 @@ $menu-toggle-height = 32px
   align-content center
   color $colors-white
   transition color 0.2s
+  height 64px
 
   &:hover
     color $colors-grey
@@ -90,6 +91,6 @@ $menu-toggle-height = 32px
     height 100%
 
 .locale-selector
-  align-self center
-  justify-self center
+  align-self flex-start
+  justify-self flex-start
 </style>

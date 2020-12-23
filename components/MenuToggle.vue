@@ -25,15 +25,15 @@ $cross-color = $colors-white
   display grid
   align-content center
   justify-content center
-  height 32px
+  height 24px
   cursor pointer
 
 .toggle
   transition all 75ms ease,opacity 75ms ease .12s
 
   &, &:before, &:after
-    width 40px
-    height 2px
+    width 30px
+    height 4px
     background $hamburger-color
     border-radius 4px
 
@@ -53,6 +53,7 @@ $cross-color = $colors-white
 
     &, &:before, &:after
       background $cross-color
+      height 2px
 
     &:after
       transform rotate(-90deg)
