@@ -72,13 +72,13 @@ h1, h2, h3, h4, h5, h6, .heading
   text-transform uppercase
   letter-spacing 4px
 
-h1
+h1, .h1
   font-size 24px
 
-h2
+h2, .h2
   font-size 18px
 
-h3
+h3, .h3
   font-size 16px
 
 a
@@ -86,7 +86,7 @@ a
   text-decoration none
 
 .section-container
-  padding 0 32px
+  padding 32px
 
   &.max-width
     max-width 1024px

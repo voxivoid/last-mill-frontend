@@ -31,9 +31,14 @@ export default {
 @import '~assets/colors'
 
 .photos
+  background $colors-black
   display grid
+  width 100%
   grid-gap 16px
-  grid-auto-flow column
+
+  @media $breakpoints-spec.md-and-up
+    grid-auto-flow column
+
 
 img
   width 100%

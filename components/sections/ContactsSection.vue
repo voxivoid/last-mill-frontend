@@ -1,5 +1,5 @@
 <template lang="pug">
-section.contacts
+section.contacts(id="contacts")
   .section-container.max-width
     h2 {{ $t("contacts") }}
 
@@ -30,16 +30,11 @@ section.contacts
 </template>
 
 <script>
-import PageWithImage from "@/components/PageWithImage.vue";
-
 import SocialNetworks from "@/mixins/helpers.socialNetworks";
 
 import contacts from "@/mocks/contacts";
 
 export default {
-  components: {
-    PageWithImage,
-  },
   mixins: [
     SocialNetworks,
   ],
