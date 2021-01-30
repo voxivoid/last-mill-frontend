@@ -2,7 +2,8 @@
 .home
   div.on-top
     logo-horizontal.logo
-    h2 {{ $t("slogan") }}
+    h2(class="font-heading lowercase tracking-widest mt-4") {{ $t("slogan") }}
+    p(class="fixed bottom-1 right-1") Know more
   .overlay
   video(width="100%" muted autoplay loop playsinline src="/videos/home_720p.mp4")
 </template>

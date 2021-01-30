@@ -39,7 +39,6 @@ export default {
   @media $breakpoints-spec.md-and-up
     grid-auto-flow column
 
-
 img
   width 100%
 </style>

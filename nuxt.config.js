@@ -42,6 +42,8 @@ export default {
     "@/plugins/vue-lazyload",
   ],
 
+  buildModules: ["@nuxtjs/tailwindcss"],
+
   /*
   ** Nuxt.js modules
   */

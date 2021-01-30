@@ -1,17 +1,20 @@
 <template lang="pug">
 div
+  about-us-section
   services-section
   photos-section
   contacts-section
 </template>
 
 <script>
+import AboutUsSection from "@/components/sections/AboutUsSection.vue";
 import ServicesSection from "@/components/sections/ServicesSection.vue";
 import PhotosSection from "@/components/sections/PhotosSection.vue";
 import ContactsSection from "@/components/sections/ContactsSection.vue";
 
 export default {
   components: {
+    AboutUsSection,
     ServicesSection,
     PhotosSection,
     ContactsSection,

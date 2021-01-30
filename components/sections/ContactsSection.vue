@@ -97,4 +97,5 @@ export default {
 
 .map
   max-width 100%
+  filter grayscale()
 </style>
