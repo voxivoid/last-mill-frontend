@@ -72,10 +72,6 @@ a
   max-height 100vh
   height 100vh
 
-  @media $breakpoints-spec.lg-and-up
-    display grid
-    grid-template-rows auto 1fr
-
 .menu-desktop
   height $menu-height
   width 100vh
