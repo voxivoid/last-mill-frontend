@@ -3,10 +3,11 @@
     id="about-us"
     class="py-16 px-8"
   >
-    <div class="container mx-auto">
+    <div class="container mx-auto text-white">
       <section-heading
         class="mb-6"
         :title="$t('title')"
+        light
       />
       <p class="text-center whitespace-pre-wrap">
         {{ $t('content') }}
@@ -40,6 +41,6 @@ export default {
 
 <style lang="stylus" scoped>
 section {
-  background: #c3c3c3;
+  background: #777779;
 }
 </style>

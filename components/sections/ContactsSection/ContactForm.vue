@@ -42,7 +42,7 @@ export default {
   i18n: {
     messages: {
       us: {
-        yourEmail: "Your email",
+        yourEmail: "Email",
         message: "Message",
         send: "Send",
         error: "There was an error while sending your email. Please try again or try another contact.",
@@ -50,7 +50,7 @@ export default {
         success: "You email was successfully sent.",
       },
       pt: {
-        yourEmail: "O seu email",
+        yourEmail: "Email",
         message: "Mensagem",
         send: "Enviar",
         error: "Houve um erro a enviar o seu email. Por favor tente outra vez ou use outra forma de contacto.",

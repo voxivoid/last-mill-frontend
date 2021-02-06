@@ -2,17 +2,28 @@
   <section
     id="contacts"
   >
-    <div class="py-16 container mx-auto grid gap-8 grid-cols-1 md:grid-cols-2">
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.219734870382!2d-9.23211488425285!3d38.75866387959223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecd0b829baa31%3A0xdcba8661ec07ef9b!2sLast%20Mill!5e0!3m2!1sen!2spt!4v1608739396766!5m2!1sen!2spt"
+      width="100%"
+      height="300"
+      frameborder="0"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    />
+
+    <div class="py-16 px-8 container mx-auto grid gap-8 grid-cols-1 md:grid-cols-2">
       <div class="grid gap-8 items-start">
         <h2 class="text-xl uppercase">
-          Get in touch!
+          {{ $t('getInTouch') }}
         </h2>
         <contact-form />
       </div>
 
       <div class="grid gap-8">
         <h2 class="text-xl uppercase">
-          Contacts
+          {{ $t('contacts') }}
         </h2>
         <div class="grid gap-4">
           <span>
@@ -72,18 +83,6 @@
         </div>
       </div>
     </div>
-
-
-    <iframe
-      class="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.219734870382!2d-9.23211488425285!3d38.75866387959223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecd0b829baa31%3A0xdcba8661ec07ef9b!2sLast%20Mill!5e0!3m2!1sen!2spt!4v1608739396766!5m2!1sen!2spt"
-      width="100%"
-      height="300"
-      frameborder="0"
-      allowfullscreen=""
-      aria-hidden="false"
-      tabindex="0"
-    />
   </section>
 </template>
 
@@ -95,15 +94,16 @@ export default {
     ContactForm,
   },
   i18n: {
-    messageContactForms: {
+    messages: {
       us: {
-        title: "Contacts",
+        contacts: "Contacts",
         phones: "Phones",
         address: "Address",
         email: "Email",
       },
       pt: {
-        title: "Contactos",
+        getInTouch: "Contacta-nos!",
+        contacts: "Contactos",
         phones: "Telefones",
         address: "Morada",
         email: "Email",

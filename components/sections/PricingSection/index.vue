@@ -7,9 +7,10 @@
       <section-heading
         class="mb-6"
         :title="$t('title')"
+        light
       />
       <div class="mb-8">
-        <h2 class="mb-6 uppercase text-xl">
+        <h2 class="mb-6 uppercase text-xl text-white">
           {{ $t('music') }}
         </h2>
         <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -24,7 +25,7 @@
       </div>
 
       <div class="mb-8">
-        <h2 class="mb-6 uppercase text-xl">
+        <h2 class="mb-6 uppercase text-xl text-white">
           {{ $t('video') }}
         </h2>
         <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -171,6 +172,6 @@ export default {
 
 <style lang="stylus" scoped>
 section {
-  background: #c3c3c3;
+  background: #777779;
 }
 </style>

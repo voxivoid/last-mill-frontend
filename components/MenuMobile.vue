@@ -5,7 +5,7 @@
     nuxt-link.logo(:to="localePath('index')" @click.native="isOpen = !isOpen")
       windmill(fill="white")
 
-    nuxt-link.link.heading(v-for="page in pages" :key="page.to + page.hash" :to="`${localePath(page.to)}#${page.hash}`" @click.native="isOpen = !isOpen")
+    button.link.heading(class="text-left" v-for="page in pages" :key="page.hash" @click="goTo(page.hash)")
       span.base {{ page.name }}
 
     locale-selector.locale-selector
@@ -29,6 +29,15 @@ export default {
     return {
       isOpen: false,
     };
+  },
+  methods: {
+    goTo(hash) {
+      this.isOpen = false;
+
+      document.querySelector(`#${hash}`).scrollIntoView({
+        behavior: "smooth",
+      });
+    },
   },
 };
 </script>
@@ -59,7 +68,7 @@ $menu-toggle-padding = 16px
   bottom 0
   left 100vw
   right 0
-  background $colors-black
+  background #323232
   z-index -1
   opacity 0
   transition all 0.3s

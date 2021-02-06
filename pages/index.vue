@@ -48,7 +48,7 @@ export default {
   left 0
   right 0
   z-index 1
-  background linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, $colors-black 100%);
+  background linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, $colors-white 100%);
 
 .logo
   max-width 512px

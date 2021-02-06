@@ -1,7 +1,6 @@
 <template lang="pug">
 .layout
   cloak
-  menu-mobile
   nuxt
 </template>
 
@@ -9,14 +8,10 @@
 import { mapState } from "vuex";
 
 import Cloak from "@/components/Cloak.vue";
-import MenuDesktop from "@/components/MenuDesktop.vue";
-import MenuMobile from "@/components/MenuMobile.vue";
 
 export default {
   components: {
     Cloak,
-    MenuDesktop,
-    MenuMobile,
   },
   data() {
     return {
