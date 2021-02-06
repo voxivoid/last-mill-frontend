@@ -5,7 +5,7 @@
     nuxt-link.logo(:to="localePath('index')" @click.native="isOpen = !isOpen")
       windmill(fill="white")
 
-    nuxt-link.link.heading(v-for="page in pages" :key="page.to" :to="localePath(page.to)" @click.native="isOpen = !isOpen")
+    nuxt-link.link.heading(v-for="page in pages" :key="page.to + page.hash" :to="`${localePath(page.to)}#${page.hash}`" @click.native="isOpen = !isOpen")
       span.base {{ page.name }}
 
     locale-selector.locale-selector

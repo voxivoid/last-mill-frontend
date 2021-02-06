@@ -1,6 +1,6 @@
 <template>
-  <div class="section-heading grid gap-2 items-center justify-center text-center uppercase text-2xl">
-    <h1>
+  <div class="section-heading grid gap-2 items-center justify-center text-center ">
+    <h1 class="uppercase text-2xl">
       {{ title }}
     </h1>
     <div class="grid grid-flow-col gap-2 items-center justify-center">
