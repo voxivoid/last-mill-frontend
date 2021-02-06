@@ -1,9 +1,8 @@
 <template lang="pug">
 .layout
   cloak
-  menu-mobile(v-if="$sizes.md_and_down")
-  menu-desktop.menu-desktop(v-else)
-  nuxt.page-scroll
+  menu-mobile
+  nuxt
 </template>
 
 <script>
@@ -67,24 +66,6 @@ body
 *:before,
 *:after
   box-sizing border-box
-
-h1
-  font-size 32px
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 48px
-
-h2
-  font-size 24px
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 32px
-
-h3
-  font-size 18px
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 24px
 
 a
   color $colors-blue

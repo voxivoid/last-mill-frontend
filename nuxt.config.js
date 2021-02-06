@@ -1,7 +1,7 @@
 import i18n from "./i18n";
 
 export default {
-  mode: "spa",
+  ssr: false,
 
   /*
   ** Headers of the page
@@ -32,6 +32,7 @@ export default {
   ** Global CSS
   */
   css: [
+    "reset-css/reset.css",
     "simplebar/dist/simplebar.min.css",
   ],
 
@@ -45,6 +46,8 @@ export default {
   /*
   ** Nuxt.js modules
   */
+  buildModules: ["@nuxtjs/tailwindcss"],
+
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
