@@ -17,7 +17,7 @@ export default {
 <style lang="stylus" scoped>
 @import '~assets/colors'
 
-$hamburger-color = $colors-white
+$hamburger-color = $colors-black
 $cross-color = $colors-white
 
 .menu-toggle
@@ -25,14 +25,14 @@ $cross-color = $colors-white
   display grid
   align-content center
   justify-content center
-  height 32px
+  height 24px
   cursor pointer
 
 .toggle
   transition all 75ms ease,opacity 75ms ease .12s
 
   &, &:before, &:after
-    width 40px
+    width 30px
     height 2px
     background $hamburger-color
     border-radius 4px
@@ -53,6 +53,7 @@ $cross-color = $colors-white
 
     &, &:before, &:after
       background $cross-color
+      height px
 
     &:after
       transform rotate(-90deg)
