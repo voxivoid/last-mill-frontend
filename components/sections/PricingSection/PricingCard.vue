@@ -7,7 +7,7 @@
     <div v-if="price">
       <span class="text-xs text-left">{{ $t('from') }}</span>
       <div class="flex items-center justify-center">
-        <span class="mr-2 text-4xl">{{ price }}</span>
+        <span class="mr-2 text-4xl font-bold">{{ price }}</span>
         <span>€</span>
       </div>
     </div>
@@ -15,12 +15,12 @@
 
     <span class="text-sm text-left whitespace-pre-line">{{ description }}</span>
 
-    <button
-      class="self-end h-12 px-4 rounded"
+    <el-button
+      type="primary"
       @click="contactUs"
     >
       {{ $t("contact") }}
-    </button>
+    </el-button>
   </div>
 </template>
 
@@ -66,10 +66,5 @@ export default {
 .pricing-card {
   background: #ededed;
   grid-template-rows: auto auto 1fr auto;
-}
-
-button {
- background: #13ccc6;
- color: #ffffff;
 }
 </style>

@@ -19,7 +19,7 @@ export default {
       { rel: "icon", type: "image/png", href: "/favicon_32.png", sizes: "32x32" },
       { rel: "icon", type: "image/png", href: "/favicon_48.png", sizes: "48x48" },
       { href: "https://fonts.googleapis.com/css?family=Maven+Pro", rel: "stylesheet" },
-      { href: "https://use.fontawesome.com/releases/v5.9.0/css/all.css", rel: "stylesheet" },
+      { href: "https://use.fontawesome.com/releases/v5.15.0/css/all.css", rel: "stylesheet" },
     ],
   },
 
@@ -33,7 +33,7 @@ export default {
   */
   css: [
     "reset-css/reset.css",
-    "simplebar/dist/simplebar.min.css",
+    "element-ui/lib/theme-chalk/index.css",
   ],
 
   /*
@@ -41,6 +41,7 @@ export default {
   */
   plugins: [
     "@/plugins/vue-lazyload",
+    "@/plugins/element-ui",
   ],
 
   /*
@@ -67,6 +68,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    transpile: [/^element-ui/],
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

@@ -11,7 +11,7 @@
 import AboutUsSection from "@/components/sections/AboutUsSection.vue";
 import PortfolioSection from "@/components/sections/PortfolioSection.vue";
 import PricingSection from "@/components/sections/PricingSection/index.vue";
-import ContactsSection from "@/components/sections/ContactsSection.vue";
+import ContactsSection from "@/components/sections/ContactsSection/index.vue";
 
 export default {
   components: {

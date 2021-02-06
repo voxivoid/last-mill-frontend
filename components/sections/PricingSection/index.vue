@@ -10,7 +10,7 @@
       />
       <div class="mb-8">
         <h2 class="mb-6 uppercase text-xl">
-          Música
+          {{ $t('music') }}
         </h2>
         <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <pricing-card
@@ -25,7 +25,7 @@
 
       <div class="mb-8">
         <h2 class="mb-6 uppercase text-xl">
-          Video
+          {{ $t('video') }}
         </h2>
         <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <pricing-card
@@ -54,31 +54,35 @@ export default {
     messages: {
       us: {
         title: "Pricing",
+        music: "Music",
+        video: "Video",
         videoPacks: {
           clip: {
             title: "MUSIC VIDEO PACK",
-            description: "Production expenses non included\n\nScript, Recording, Directing. Editing, Coloring + 2 revisions\n\nExtra revision – 30€",
+            description: "Script, Recording, Directing. Editing, Coloring + 2 revisions\n\nExtra revision – 30€\n\n* Production expenses non included",
           },
           show: {
             title: "SHOW PACK",
-            description: "Production expenses non included\n\nRecording, Editing, Coloring + 1 revision\n\nExtra revision – 30€",
+            description: "Recording, Editing, Coloring + 1 revision\n\nExtra revision – 30€\n\n* Production expenses non included",
           },
           advertising: {
             title: "ADVERTISING PACK",
-            description: "Production expenses non included\n\nScript, Recording, Directing. Editing, Coloring, Audio + 2 revisions\n\nExtra revision – 100€",
+            description: "Script, Recording, Directing. Editing, Coloring, Audio + 2 revisions\n\nExtra revision – 100€\n\n* Production expenses non included",
           },
           individual: {
             title: "INDIVIDUAL PACKS",
-            description: "Production expenses non included\n\bRecording (day rate) – 100€\n\nEditing + 2 revisions – 350€ (Extra revision– 30,00€)\n\nColoring + 2 revisions – 350€ (Extra revision – 30€)",
+            description: "Recording (day rate) – 100€\n\nEditing + 2 revisions – 350€ (Extra revision– 30,00€)\n\nColoring + 2 revisions – 350€ (Extra revision – 30€)\n\n* Production expenses non included",
           },
         },
       },
       pt: {
         title: "Preços",
+        music: "Música",
+        video: "Vídeo",
         musicPacks: {
           single: {
             title: "Pack single",
-            description: "Gravação, produção, mistura e masterização.\n\n* todos os productos podem ser adequiridos à unidade.",
+            description: "Gravação, produção, mistura e masterização.\n\n* Todos os productos podem ser adequiridos à unidade.",
           },
           ep: {
             title: "Pack EP",
@@ -90,25 +94,25 @@ export default {
           },
           unit: {
             title: "Pack individual",
-            description: "Gravação 30,75/H (Min 2h)\n\nProdução Musical até 4min faixa 1500€\n\nMistura 200€ (inclui 2 revisões)\n\nRevisões extra 50€\n\nMasterização 8€/min",
+            description: "Gravação 30.75€/h (Min 2h)\n\nProdução Musical até 4min faixa – 1500€\n\nMistura – 200€ (inclui 2 revisões)\n\nRevisões extra – 50€\n\nMasterização – 8€/min",
           },
         },
         videoPacks: {
           clip: {
             title: "PACK VIDEOCLIPE",
-            description: "Despesas de produção não incluídas\n\nGuião, Gravação, Realização, Edição, Coloração + 2 revisões\n\nRevisão extra – 30€",
+            description: "Guião, Gravação, Realização, Edição, Coloração + 2 revisões\n\nRevisão extra – 30€\n\n* Despesas de produção não incluídas",
           },
           show: {
             title: "PACK ESPECTÁCULO",
-            description: "Despesas de produção não incluídas\n\nGravação, Edição, Coloração + 1 revisão\n\nRevisão extra – 30€",
+            description: "Gravação, Edição, Coloração + 1 revisão\n\nRevisão extra – 30€\n\n* Despesas de produção não incluídas",
           },
           advertising: {
             title: "PACK PUBLICIDADE",
-            description: "Despesas de produção não incluídas\n\nGuião, Gravação, Realização, Edição, Coloração, Áudio + 2 revisões\n\nRevisão extra – 100€",
+            description: "Guião, Gravação, Realização, Edição, Coloração, Áudio + 2 revisões\n\nRevisão extra – 100€\n\n* Despesas de produção não incluídas",
           },
           individual: {
-            title: "PACKS INDIVIDUAIS",
-            description: "Despesas de produção não incluídas\n\nGravação (dia) – 100€\n\nEdição + 2 revisões – 350€ (Revisão extra – 30,00€)\n\nColoração + 2 revisões – 350€ (Revisão extra – 30€)",
+            title: "PACK INDIVIDUAL",
+            description: "Gravação (dia) – 100€\n\nEdição + 2 revisões – 350€ (Revisão extra – 30€)\n\nColoração + 2 revisões – 350€ (Revisão extra – 30€)\n\n* Despesas de produção não incluídas",
           },
         },
       },
@@ -156,7 +160,7 @@ export default {
         },
         {
           title: this.$t("videoPacks.individual.title"),
-          price: 100,
+          price: undefined,
           description: this.$t("videoPacks.individual.description"),
         },
       ],

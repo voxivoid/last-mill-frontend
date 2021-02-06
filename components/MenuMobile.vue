@@ -71,7 +71,7 @@ $menu-toggle-padding = 16px
     box-shadow 0 14px 28px rgba($colors-black, 0.25), 0 10px 10px rgba($colors-black ,0.22)
 
     @media $breakpoints-spec.sm-and-up
-      left calc(100vw - 500px)
+      left calc(100vw - 400px)
 
 .link
   display grid
