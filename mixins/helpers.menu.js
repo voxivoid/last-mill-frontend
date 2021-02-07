@@ -29,13 +29,13 @@ export default {
     messages: {
       us: {
         aboutUs: "About us",
-        portfolio: "Latest work",
+        portfolio: "Featured work",
         pricing: "Pricing",
         contacts: "Contacts",
       },
       pt: {
         aboutUs: "Sobre nós",
-        portfolio: "Últimos trabalhos",
+        portfolio: "Trabalhos em destaque",
         pricing: "Preços",
         contacts: "Contactos",
       },
