@@ -1,7 +1,7 @@
 import i18n from "./i18n";
 
 export default {
-  mode: "spa",
+  ssr: false,
 
   /*
   ** Headers of the page
@@ -18,8 +18,8 @@ export default {
       { rel: "icon", type: "image/png", href: "/favicon_16.png", sizes: "16x16" },
       { rel: "icon", type: "image/png", href: "/favicon_32.png", sizes: "32x32" },
       { rel: "icon", type: "image/png", href: "/favicon_48.png", sizes: "48x48" },
-      { href: "https://fonts.googleapis.com/css?family=Maven+Pro", rel: "stylesheet" },
-      { href: "https://use.fontawesome.com/releases/v5.9.0/css/all.css", rel: "stylesheet" },
+      { href: "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,400&display=swap", rel: "stylesheet" },
+      { href: "https://use.fontawesome.com/releases/v5.15.0/css/all.css", rel: "stylesheet" },
     ],
   },
 
@@ -32,7 +32,9 @@ export default {
   ** Global CSS
   */
   css: [
-    "simplebar/dist/simplebar.min.css",
+    "reset-css/reset.css",
+    "element-ui/lib/theme-chalk/index.css",
+    "@/assets/main.css",
   ],
 
   /*
@@ -40,11 +42,14 @@ export default {
   */
   plugins: [
     "@/plugins/vue-lazyload",
+    "@/plugins/element-ui",
   ],
 
   /*
   ** Nuxt.js modules
   */
+  buildModules: ["@nuxtjs/tailwindcss"],
+
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
@@ -64,6 +69,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    transpile: [/^element-ui/],
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

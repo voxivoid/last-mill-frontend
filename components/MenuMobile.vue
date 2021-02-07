@@ -4,9 +4,11 @@
   .overlay(:class="{'is-open': isOpen}")
     nuxt-link.logo(:to="localePath('index')" @click.native="isOpen = !isOpen")
       windmill(fill="white")
-    locale-selector.locale-selector
-    nuxt-link.link(v-for="page in pages" :key="page.to" :to="localePath(page.to)" @click.native="isOpen = !isOpen")
+
+    button.link.heading(class="text-left" v-for="page in pages" :key="page.hash" @click="goTo(page.hash)")
       span.base {{ page.name }}
+
+    locale-selector.locale-selector
 </template>
 
 <script>
@@ -28,6 +30,15 @@ export default {
       isOpen: false,
     };
   },
+  methods: {
+    goTo(hash) {
+      this.isOpen = false;
+
+      document.querySelector(`#${hash}`).scrollIntoView({
+        behavior: "smooth",
+      });
+    },
+  },
 };
 </script>
 
@@ -36,7 +47,6 @@ export default {
 @import '~assets/colors'
 
 $menu-toggle-padding = 16px
-$menu-toggle-height = 32px
 
 .menu-mobile
   font-weight bold
@@ -49,21 +59,19 @@ $menu-toggle-height = 32px
   z-index 999
 
 .overlay
-  display grid
-  grid-auto-rows 64px
-  padding $menu-toggle-padding + 32px 0
+  display flex
+  flex-direction column
+  gap 16px
+  padding $menu-toggle-padding + 32px 32px
   position fixed
   top 0
   bottom 0
   left 100vw
   right 0
-  background $colors-black
+  background #323232
   z-index -1
   opacity 0
   transition all 0.3s
-
-  & > .link
-    border-bottom 1px dashed $colors-grey
 
   &.is-open
     left 0
@@ -72,24 +80,26 @@ $menu-toggle-height = 32px
     box-shadow 0 14px 28px rgba($colors-black, 0.25), 0 10px 10px rgba($colors-black ,0.22)
 
     @media $breakpoints-spec.sm-and-up
-      left 50vw
+      left calc(100vw - 400px)
 
 .link
   display grid
   align-content center
-  padding 0 32px
   color $colors-white
+  transition color 0.2s
+  height 64px
+
+  &:hover
+    color $colors-grey
 
 .logo
-  display flex
-  align-content center
-  justify-content center
+  align-self start
+  width 50px
 
   svg
     height 100%
 
 .locale-selector
-  display grid
-  align-content center
-  justify-content center
+  align-self flex-start
+  justify-self flex-start
 </style>

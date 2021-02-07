@@ -1,23 +1,17 @@
 <template lang="pug">
 .layout
   cloak
-  menu-mobile(v-if="$sizes.md_and_down")
-  menu-desktop.menu-desktop(v-else)
-  nuxt.page-scroll
+  nuxt
 </template>
 
 <script>
 import { mapState } from "vuex";
 
 import Cloak from "@/components/Cloak.vue";
-import MenuDesktop from "@/components/MenuDesktop.vue";
-import MenuMobile from "@/components/MenuMobile.vue";
 
 export default {
   components: {
     Cloak,
-    MenuDesktop,
-    MenuMobile,
   },
   data() {
     return {
@@ -51,7 +45,7 @@ export default {
 $menu-height = 65px
 
 html
-  font-family 'Maven Pro', sans-serif
+  font-family 'Raleway', sans-serif
   font-size 16px
   word-spacing 1px
   -ms-text-size-adjust 100%
@@ -59,8 +53,10 @@ html
   -moz-osx-font-smoothing grayscale
   -webkit-font-smoothing antialiased
   box-sizing border-box
+  color #374151
 
 body
+  line-height 1.5rem
   margin 0
 
 *,
@@ -68,36 +64,17 @@ body
 *:after
   box-sizing border-box
 
-h1
-  font-size 32px
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 48px
-
-h2
-  font-size 24px
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 32px
-
-h3
-  font-size 18px
-
-  @media $breakpoints-spec.lg-and-up
-    font-size 24px
-
 a
   color $colors-blue
   text-decoration none
+
+.font-heading
+  letter-spacing 0.2rem
 
 .layout
   min-height 100vh
   max-height 100vh
   height 100vh
-
-  @media $breakpoints-spec.lg-and-up
-    display grid
-    grid-template-rows auto 1fr
 
 .menu-desktop
   height $menu-height

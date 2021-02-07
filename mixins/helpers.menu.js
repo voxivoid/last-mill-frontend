@@ -4,15 +4,23 @@ export default {
       return [
         {
           name: this.$t("aboutUs"),
-          to: "about-us",
+          to: "know-more",
+          hash: "about-us",
         },
         {
-          name: this.$t("services"),
-          to: "services",
+          name: this.$t("portfolio"),
+          to: "know-more",
+          hash: "portfolio",
+        },
+        {
+          name: this.$t("pricing"),
+          to: "know-more",
+          hash: "pricing",
         },
         {
           name: this.$t("contacts"),
-          to: "contacts",
+          to: "know-more",
+          hash: "contacts",
         },
       ];
     },
@@ -21,12 +29,14 @@ export default {
     messages: {
       us: {
         aboutUs: "About us",
-        services: "Services",
+        portfolio: "Latest work",
+        pricing: "Pricing",
         contacts: "Contacts",
       },
       pt: {
         aboutUs: "Sobre nós",
-        services: "Serviços",
+        portfolio: "Últimos trabalhos",
+        pricing: "Preços",
         contacts: "Contactos",
       },
     },
