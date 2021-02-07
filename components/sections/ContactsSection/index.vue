@@ -15,14 +15,14 @@
 
     <div class="py-16 px-8 container mx-auto grid gap-8 grid-cols-1 md:grid-cols-2">
       <div class="grid gap-8 items-start">
-        <h2 class="text-xl uppercase">
+        <h2 class="font-heading text-2xl uppercase">
           {{ $t('getInTouch') }}
         </h2>
         <contact-form />
       </div>
 
       <div class="grid gap-8">
-        <h2 class="text-xl uppercase">
+        <h2 class="font-heading text-2xl uppercase">
           {{ $t('contacts') }}
         </h2>
         <div class="grid gap-4">

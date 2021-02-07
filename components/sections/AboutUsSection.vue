@@ -3,7 +3,12 @@
     id="about-us"
     class="py-16 px-8"
   >
-    <div class="container mx-auto text-white">
+    <div class="container mx-auto text-white flex flex-col items-center justify-center">
+      <windmill
+        class="w-16 mb-6"
+        fill="white"
+      />
+
       <section-heading
         class="mb-6"
         :title="$t('title')"
@@ -18,10 +23,12 @@
 
 <script>
 import SectionHeading from "@/components/SectionHeading.vue";
+import Windmill from "@/components/svgs/Windmill.vue";
 
 export default {
   components: {
     SectionHeading,
+    Windmill,
   },
   i18n: {
     messages: {

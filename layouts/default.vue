@@ -45,7 +45,7 @@ export default {
 $menu-height = 65px
 
 html
-  font-family 'Maven Pro', sans-serif
+  font-family 'Raleway', sans-serif
   font-size 16px
   word-spacing 1px
   -ms-text-size-adjust 100%
@@ -66,6 +66,9 @@ body
 a
   color $colors-blue
   text-decoration none
+
+.font-heading
+  letter-spacing 0.1rem
 
 .layout
   min-height 100vh

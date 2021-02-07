@@ -14,7 +14,7 @@
       class="z-10 fixed bottom-0 right-0 p-8 text-md md:text-2xl text-white"
       to="/know-more"
     >
-      Clica para caminhares connosco
+      {{ $t('knowMore') }}
       <i class="fas fa-chevron-right" />
     </nuxt-link>
 
@@ -26,16 +26,17 @@
 import LogoHorizontal from "@/components/svgs/LogoHorizontal.vue";
 
 export default {
+  transition: "home",
   components: {
     LogoHorizontal,
   },
   i18n: {
     messages: {
       us: {
-        slogan: "The path between dream and reality",
+        knowMore: "Click to know more",
       },
       pt: {
-        slogan: "O caminho entre o sonho e a realidade",
+        knowMore: "Clica para saberes mais",
       },
     },
   },
@@ -48,4 +49,7 @@ export default {
   top: 1rem;
   left: 1rem;
 }
+
+.home-enter-active, .home-leave-active { transition: opacity .5s; }
+.home-enter, .home-leave-active { opacity: 0; }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div :class="['section-heading grid gap-2 items-center justify-center text-center', {'text-white': light}]">
-    <h1 class="uppercase text-2xl font-bold">
+    <h1 class="font-heading uppercase text-3xl font-bold">
       {{ title }}
     </h1>
     <div class="grid grid-flow-col gap-2 items-center justify-center">

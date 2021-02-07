@@ -18,6 +18,7 @@ import MenuMobile from "@/components/MenuMobile.vue";
 import FooterSection from "../components/sections/FooterSection.vue";
 
 export default {
+  transition: "know-more",
   components: {
     AboutUsSection,
     PortfolioSection,
@@ -31,5 +32,6 @@ export default {
 
 
 <style lang="stylus" scoped>
-
+  .know-more-enter-active, .know-more-leave-active { transition: opacity .5s; }
+  .know-more-enter, .know-more-leave-active { opacity: 0; }
 </style>

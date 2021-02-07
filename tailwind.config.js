@@ -9,7 +9,7 @@ module.exports = {
         "2xs": "16rem",
       },
       fontFamily: {
-        heading: ["Karla"],
+        heading: ["American Captain"],
         body: ["Open sans"],
       },
     },
