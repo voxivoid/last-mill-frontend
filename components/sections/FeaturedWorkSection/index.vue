@@ -46,15 +46,15 @@ export default {
     return {
       works: [
         {
-          imgSrc: "/works/mike-filipe-24-agosto.jpeg",
+          imgSrc: "/works/mike-filipe-24-agosto.jpg",
           href: "https://youtu.be/6gkcC9-JQqw",
         },
         {
-          imgSrc: "/works/daniel-sousa-ser-emigrante.jpeg",
+          imgSrc: "/works/daniel-sousa-ser-emigrante.jpg",
           href: "https://youtu.be/K-Z91hRxLNg",
         },
         {
-          imgSrc: "/works/maddo-coracao.jpeg",
+          imgSrc: "/works/maddo-coracao.jpg",
           href: "https://youtu.be/dtlysPSxJ5U",
         },
       ],

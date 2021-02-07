@@ -5,7 +5,7 @@
     rel="noreferrer noopener"
   >
     <img
-      class="object-cover h-full"
+      class="object-cover"
       :src="imgSrc"
     >
   </a>
