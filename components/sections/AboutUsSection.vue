@@ -10,10 +10,10 @@
       />
 
       <section-heading
-        class="mb-6"
         :title="$t('title')"
         light
       />
+
       <p class="text-center whitespace-pre-wrap">
         {{ $t('content') }}
       </p>

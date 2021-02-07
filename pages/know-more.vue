@@ -2,7 +2,7 @@
   <div>
     <menu-mobile />
     <about-us-section />
-    <portfolio-section />
+    <featured-work-section />
     <pricing-section />
     <contacts-section />
     <footer-section />
@@ -11,7 +11,7 @@
 
 <script>
 import AboutUsSection from "@/components/sections/AboutUsSection.vue";
-import PortfolioSection from "@/components/sections/PortfolioSection.vue";
+import FeaturedWorkSection from "@/components/sections/FeaturedWorkSection/index.vue";
 import PricingSection from "@/components/sections/PricingSection/index.vue";
 import ContactsSection from "@/components/sections/ContactsSection/index.vue";
 import MenuMobile from "@/components/MenuMobile.vue";
@@ -21,7 +21,7 @@ export default {
   transition: "know-more",
   components: {
     AboutUsSection,
-    PortfolioSection,
+    FeaturedWorkSection,
     PricingSection,
     ContactsSection,
     MenuMobile,

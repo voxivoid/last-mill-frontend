@@ -40,6 +40,10 @@
           />
         </div>
       </div>
+
+      <p class="text-center text-white">
+        {{ $t('vatIncluded') }}
+      </p>
     </div>
   </section>
 </template>
@@ -59,6 +63,7 @@ export default {
         title: "Pricing",
         music: "Music",
         video: "Video",
+        vatIncluded: "All prices already include VAT",
         musicPacks: {
           single: {
             title: "Single Pack",
@@ -123,6 +128,7 @@ export default {
         title: "Preços",
         music: "Música",
         video: "Vídeo",
+        vatIncluded: "Todos os preços incluem IVA",
         musicPacks: {
           single: {
             title: "Pack single",
