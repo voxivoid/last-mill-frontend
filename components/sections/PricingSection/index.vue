@@ -20,6 +20,7 @@
             :title="pack.title"
             :price="pack.price"
             :description="pack.description"
+            :notes="pack.notes"
           />
         </div>
       </div>
@@ -35,6 +36,7 @@
             :title="pack.title"
             :price="pack.price"
             :description="pack.description"
+            :notes="pack.notes"
           />
         </div>
       </div>
@@ -57,22 +59,63 @@ export default {
         title: "Pricing",
         music: "Music",
         video: "Video",
+        musicPacks: {
+          single: {
+            title: "Single Pack",
+            description: "Recording, Production, Mix and Master.",
+            notes: {
+              1: "* All products can be acquired separately.",
+            },
+          },
+          ep: {
+            title: "EP Pack",
+            description: "Recording, Production, Mix and Master.\n\n",
+            notes: {
+              1: "* May include Digital Distribution, Physical CD, CD and Cover Design, Video, Photography.",
+              2: "** All products can be acquired separately.",
+            },
+          },
+          album: {
+            title: "Album Pack ",
+            description: "Recording, Production, Mix and Master.",
+            notes: {
+              1: "* May include Digital Distribution, Physical CD, CD and Cover Design, Video, Photography",
+              2: "** All products can be acquired separately.",
+            },
+          },
+          unit: {
+            title: "Individual Pack ",
+            description: "Recording 30.75€/h (Min 2h)\n\nProduction up to 4min track – 1500€\n\nMix – 200€ (with 2 revisions)\n\nExtra revision – 50€\n\nMaster – 8€/min",
+          },
+        },
         videoPacks: {
           clip: {
             title: "MUSIC VIDEO PACK",
-            description: "Script, Recording, Directing. Editing, Coloring + 2 revisions\n\nExtra revision – 30€\n\n* Production expenses non included",
+            description: "Script, Recording, Directing. Editing, Coloring + 2 revisions\n\nExtra revision – 30€",
+            notes: {
+              1: "* Production expenses non included",
+            },
           },
           show: {
             title: "SHOW PACK",
-            description: "Recording, Editing, Coloring + 1 revision\n\nExtra revision – 30€\n\n* Production expenses non included",
+            description: "Recording, Editing, Coloring + 1 revision\n\nExtra revision – 30€",
+            notes: {
+              1: "* Production expenses non included",
+            },
           },
           advertising: {
             title: "ADVERTISING PACK",
-            description: "Script, Recording, Directing. Editing, Coloring, Audio + 2 revisions\n\nExtra revision – 100€\n\n* Production expenses non included",
+            description: "Script, Recording, Directing. Editing, Coloring, Audio + 2 revisions\n\nExtra revision – 100€",
+            notes: {
+              1: "* Production expenses non included",
+            },
           },
           individual: {
             title: "INDIVIDUAL PACKS",
-            description: "Recording (day rate) – 100€\n\nEditing + 2 revisions – 350€ (Extra revision– 30,00€)\n\nColoring + 2 revisions – 350€ (Extra revision – 30€)\n\n* Production expenses non included",
+            description: "Recording (day rate) – 100€\n\nEditing + 2 revisions – 350€ (Extra revision– 30,00€)\n\nColoring + 2 revisions – 350€ (Extra revision – 30€)",
+            notes: {
+              1: "* Production expenses non included",
+            },
           },
         },
       },
@@ -83,15 +126,26 @@ export default {
         musicPacks: {
           single: {
             title: "Pack single",
-            description: "Gravação, produção, mistura e masterização.\n\n* Todos os productos podem ser adequiridos à unidade.",
+            description: "Gravação, Produção, Mistura e Masterização.",
+            notes: {
+              1: "* Todos os produtos podem ser adquiridos à unidade.",
+            },
           },
           ep: {
             title: "Pack EP",
-            description: "Gravação, produção, mistura e masterização.\n\n*Pode incluir Distribuição Digital, CD Físico, Design de Capa e CD, Vídeo, Fotografia\n\n** Todos os productos podem ser adequiridos à unidade.",
+            description: "Gravação, Produção, Mistura e Masterização.\n\n",
+            notes: {
+              1: "* Pode incluir Distribuição Digital, CD Físico, Design de Capa e CD, Vídeo, Fotografia.",
+              2: "** Todos os produtos podem ser adquiridos à unidade.",
+            },
           },
           album: {
             title: "Pack Álbum",
-            description: "Gravação, produção, mistura e masterização.\n\n*Pode incluir Distribuição Digital, CD Físico, Design de Capa e CD, Vídeo, Fotografia\n\n** Todos os productos podem ser adequiridos à unidade.",
+            description: "Gravação, Produção, Mistura e Masterização.",
+            notes: {
+              1: "* Pode incluir Distribuição Digital, CD Físico, Design de Capa e CD, Vídeo, Fotografia.",
+              2: "** Todos os produtos podem ser adquiridos à unidade.",
+            },
           },
           unit: {
             title: "Pack individual",
@@ -101,19 +155,31 @@ export default {
         videoPacks: {
           clip: {
             title: "PACK VIDEOCLIPE",
-            description: "Guião, Gravação, Realização, Edição, Coloração + 2 revisões\n\nRevisão extra – 30€\n\n* Despesas de produção não incluídas",
+            description: "Guião, Gravação, Realização, Edição, Coloração + 2 revisões\n\nRevisão extra – 30€",
+            notes: {
+              1: "* Despesas de produção não incluídas",
+            },
           },
           show: {
             title: "PACK ESPECTÁCULO",
-            description: "Gravação, Edição, Coloração + 1 revisão\n\nRevisão extra – 30€\n\n* Despesas de produção não incluídas",
+            description: "Gravação, Edição, Coloração + 1 revisão\n\nRevisão extra – 30€",
+            notes: {
+              1: "* Despesas de produção não incluídas",
+            },
           },
           advertising: {
             title: "PACK PUBLICIDADE",
-            description: "Guião, Gravação, Realização, Edição, Coloração, Áudio + 2 revisões\n\nRevisão extra – 100€\n\n* Despesas de produção não incluídas",
+            description: "Guião, Gravação, Realização, Edição, Coloração, Áudio + 2 revisões\n\nRevisão extra – 100€",
+            notes: {
+              1: "* Despesas de produção não incluídas",
+            },
           },
           individual: {
             title: "PACK INDIVIDUAL",
-            description: "Gravação (dia) – 100€\n\nEdição + 2 revisões – 350€ (Revisão extra – 30€)\n\nColoração + 2 revisões – 350€ (Revisão extra – 30€)\n\n* Despesas de produção não incluídas",
+            description: "Gravação (dia) – 100€\n\nEdição + 2 revisões – 350€ (Revisão extra – 30€)\n\nColoração + 2 revisões – 350€ (Revisão extra – 30€)",
+            notes: {
+              1: "* Despesas de produção não incluídas",
+            },
           },
         },
       },
@@ -126,16 +192,19 @@ export default {
           title: this.$t("musicPacks.single.title"),
           price: 1000,
           description: this.$t("musicPacks.single.description"),
+          notes: [this.$t("musicPacks.single.notes.1")],
         },
         {
           title: this.$t("musicPacks.ep.title"),
           price: 4500,
           description: this.$t("musicPacks.ep.description"),
+          notes: [this.$t("musicPacks.ep.notes.1"), this.$t("musicPacks.ep.notes.2")],
         },
         {
           title: this.$t("musicPacks.album.title"),
           price: 6500,
           description: this.$t("musicPacks.album.description"),
+          notes: [this.$t("musicPacks.album.notes.1"), this.$t("musicPacks.album.notes.2")],
         },
         {
           title: this.$t("musicPacks.unit.title"),
@@ -148,21 +217,25 @@ export default {
           title: this.$t("videoPacks.clip.title"),
           price: 1300,
           description: this.$t("videoPacks.clip.description"),
+          notes: [this.$t("videoPacks.clip.notes.1")],
         },
         {
           title: this.$t("videoPacks.show.title"),
           price: 200,
           description: this.$t("videoPacks.show.description"),
+          notes: [this.$t("videoPacks.show.notes.1")],
         },
         {
           title: this.$t("videoPacks.advertising.title"),
           price: 3500,
           description: this.$t("videoPacks.advertising.description"),
+          notes: [this.$t("videoPacks.advertising.notes.1")],
         },
         {
           title: this.$t("videoPacks.individual.title"),
           price: undefined,
           description: this.$t("videoPacks.individual.description"),
+          notes: [this.$t("videoPacks.individual.notes.1")],
         },
       ],
     };

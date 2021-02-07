@@ -25,7 +25,7 @@
         <h2 class="font-heading text-2xl uppercase">
           {{ $t('contacts') }}
         </h2>
-        <div class="grid gap-4">
+        <div class="grid gap-2">
           <span>
             <i class="fas fa-envelope" />
             <span class="font-bold">
@@ -96,6 +96,7 @@ export default {
   i18n: {
     messages: {
       us: {
+        getInTouch: "Get in touch with us!",
         contacts: "Contacts",
         phones: "Phones",
         address: "Address",

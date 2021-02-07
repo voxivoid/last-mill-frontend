@@ -56,6 +56,7 @@ html
   color #374151
 
 body
+  line-height 1.5rem
   margin 0
 
 *,
@@ -68,7 +69,7 @@ a
   text-decoration none
 
 .font-heading
-  letter-spacing 0.1rem
+  letter-spacing 0.2rem
 
 .layout
   min-height 100vh
