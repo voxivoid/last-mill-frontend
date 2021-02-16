@@ -2,7 +2,7 @@
 
 export const locales = [
   { code: "us", iso: "en-US", name: "English" },
-  { code: "pt", iso: "pt-pt", name: "Português" },
+  { code: "pt", iso: "pt-PT", name: "Português" },
 ];
 
 export default {
