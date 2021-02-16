@@ -6,18 +6,14 @@
 <script>
 import CountryFlag from "vue-country-flag";
 
-import LocaleHelpers from "@/mixins/helpers.locale";
 
 export default {
   components: {
     CountryFlag,
   },
-  mixins: [
-    LocaleHelpers,
-  ],
   computed: {
     availableLocale() {
-      if (this.locale === "pt") {
+      if (this.$i18n.locale === "pt") {
         return "us";
       }
 

@@ -7,6 +7,7 @@
     <img
       class="object-cover"
       :src="imgSrc"
+      :alt="alt"
     >
   </a>
 </template>
@@ -19,6 +20,10 @@ export default {
       required: true,
     },
     href: {
+      type: String,
+      required: true,
+    },
+    alt: {
       type: String,
       required: true,
     },

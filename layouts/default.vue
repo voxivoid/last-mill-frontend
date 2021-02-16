@@ -13,6 +13,30 @@ export default {
   components: {
     Cloak,
   },
+  head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+
+    return {
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs,
+      },
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { hid: "description", name: "description", content: "Last Mill é um estúdio de produção musical e vídeo." },
+        { name: "keywords", content: "last mill, produção musical, produção de vídeo, videoclipes, videoclips, estúdio de vídeo, koopper, fontoura fx, márcio oliveira monteiro, estúdio lisboa, gravação musical, hip hop, rap, música urbana, kizomba, afro, música popular, estúdio" },
+        ...i18nHead.meta,
+      ],
+      link: [
+        { rel: "icon", type: "image/png", href: "/favicon_16.png", sizes: "16x16" },
+        { rel: "icon", type: "image/png", href: "/favicon_32.png", sizes: "32x32" },
+        { rel: "icon", type: "image/png", href: "/favicon_48.png", sizes: "48x48" },
+        { href: "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,400&display=swap", rel: "stylesheet" },
+        { href: "https://use.fontawesome.com/releases/v5.15.0/css/all.css", rel: "stylesheet" },
+        ...i18nHead.link,
+      ],
+    };
+  },
   data() {
     return {
       $resizeListener: null,
