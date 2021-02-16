@@ -12,7 +12,7 @@
 
     <nuxt-link
       class="z-10 fixed bottom-0 right-0 p-8 text-md md:text-2xl text-white"
-      to="/know-more"
+      :to="localePath('/know-more')"
     >
       {{ $t('knowMore') }}
       <i class="fas fa-chevron-right" />
