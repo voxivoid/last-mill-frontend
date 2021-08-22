@@ -61,21 +61,6 @@ export default {
           href: "https://youtu.be/cKDRymKC1EY",
           alt: "Daniel Sousa - Mentir é feio",
         },
-        {
-          imgSrc: "/works/mike-filipe-24-agosto.jpg",
-          href: "https://youtu.be/6gkcC9-JQqw",
-          alt: "Mike da Gaita ft Filipe Gachineiro - 24 de agosto",
-        },
-        {
-          imgSrc: "/works/daniel-sousa-ser-emigrante.jpg",
-          href: "https://youtu.be/K-Z91hRxLNg",
-          alt: "Daniel Sousa - Ser emigrante",
-        },
-        {
-          imgSrc: "/works/maddo-coracao.jpg",
-          href: "https://youtu.be/dtlysPSxJ5U",
-          alt: "Maddo - Coração",
-        },
       ],
     };
   },
