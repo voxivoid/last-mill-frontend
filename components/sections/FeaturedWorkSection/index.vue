@@ -47,6 +47,21 @@ export default {
     return {
       works: [
         {
+          imgSrc: "/works/mike-da-gaita-o-ze-da-tasca.jpg",
+          href: "https://youtu.be/OyF8zcOIbVk",
+          alt: "Mike da Gaita - O Zé da Tasca",
+        },
+        {
+          imgSrc: "/works/daniel-sousa-cana-verde-do-alto-minho.jpg",
+          href: "https://youtu.be/UsM9hBw1XZQ",
+          alt: "Daniel Sousa - Cana Verde do Alto Minho",
+        },
+        {
+          imgSrc: "/works/daniel-sousa-mentir-e-feio.jpg",
+          href: "https://youtu.be/cKDRymKC1EY",
+          alt: "Daniel Sousa - Mentir é feio",
+        },
+        {
           imgSrc: "/works/mike-filipe-24-agosto.jpg",
           href: "https://youtu.be/6gkcC9-JQqw",
           alt: "Mike da Gaita ft Filipe Gachineiro - 24 de agosto",
