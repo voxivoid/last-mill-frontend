@@ -19,7 +19,7 @@
     "element-ui": "^2.15.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-import-resolver-webpack": "^0.11.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.20.1",
     "pug": "^2.0.4",
